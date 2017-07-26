@@ -1,0 +1,40 @@
+// @mixin clearfix {
+//     &:after{
+//         content: "";
+//         display: block;
+//         clear: both;
+//     }
+// }
+
+// .wrap {
+//     @include clearfix;
+// }
+
+%clearfix {
+    &:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+.wrap {
+    @extend %clearfix;
+}
+
+.social {
+    display: block;
+    margin-bottom: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+@each $social in (fb,vk,tw){
+    .social_#{$social} {
+        background: url('/img/#{$social}.png') center center no-repeat;
+
+        &:hover {
+            background: url('/img/#{$social}-hover.png') center center no-repeat;
+        }
+    }
+}
