@@ -1,43 +1,56 @@
-@charset "UTF-8";
 /* --------------- base settings -------------------*/
-.about__block:after {
+.welcome__content:after, .about__block:after {
   content: "";
   display: block;
   clear: both; }
 
-/* ---------------- секция мы лучшие ---------------*/
-.test, .about {
+.welcome, .about {
   position: relative;
   height: 100vh;
   display: block;
   width: 100%;
-  min-height: 650px;
-  background: lightblue; }
+  min-height: 650px; }
 
-.about__content {
+.welcome__content, .about__content {
   display: table-cell;
   vertical-align: middle; }
 
-.title_center {
-  text-align: center; }
+.title {
+  font-family: gagalinregular;
+  font-size: 72px;
+  text-transform: uppercase; }
+  .title_center {
+    text-align: center; }
+  .title_black {
+    color: #2f3234; }
+  .title_white {
+    color: #fff; }
+  .title_yellow {
+    color: #f9b43b; }
 
-.title_black {
-  color: #2f3234; }
+.subtitle {
+  font-family: lifehackmedium;
+  font-size: 65px;
+  color: #fff;
+  line-height: 60px;
+  margin-top: 20px; }
 
-.title_white {
-  color: #fff; }
-
-.title_yellow {
-  color: #f9b43b; }
-
-.container {
-  display: table;
-  height: 100%; }
-
-.test {
+.welcome {
   background: #070707 url(/img/bg_1.jpg) center no-repeat;
   background-size: cover; }
+  .welcome__content {
+    padding: 0 10px; }
+    .welcome__content__item {
+      width: 50%;
+      display: table-cell;
+      vertical-align: middle; }
+  .welcome__img img {
+    display: block;
+    margin: auto; }
+  .welcome__wrap {
+    display: table; }
 
+/* ---------------- about-section ---------------*/
 .about {
   background: #f9f3ef url(/img/bg_2.jpg) center no-repeat;
   background-size: cover;
@@ -48,11 +61,15 @@
   width: 300px;
   float: left;
   margin: 0 10px; }
+  .about__item__img {
+    height: 92px; }
   .about__item__title {
+    margin-top: 34px;
     font-family: lifehackmedium;
     font-size: 24px; }
   .about__item__text {
-    line-height: 24px; }
+    line-height: 24px;
+    margin-top: 25px; }
 
 .about__block {
-  margin: 90px 0; }
+  margin: 88px 0; }
