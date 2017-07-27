@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/* --------------- base settings -------------------*/
+.about__block:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+/* ---------------- секция мы лучшие ---------------*/
+.test, .about {
+  position: relative;
+  height: 100vh;
+  display: block;
+  width: 100%;
+  min-height: 650px;
+  background: lightblue; }
+
+.about__content {
+  display: table-cell;
+  vertical-align: middle; }
+
+.title_center {
+  text-align: center; }
+
+.title_black {
+  color: #2f3234; }
+
+.title_white {
+  color: #fff; }
+
+.title_yellow {
+  color: #f9b43b; }
+
+.container {
+  display: table;
+  height: 100%; }
+
+.test {
+  background: #070707 url(/img/bg_1.jpg) center no-repeat;
+  background-size: cover; }
+
+.about {
+  background: #f9f3ef url(/img/bg_2.jpg) center no-repeat;
+  background-size: cover;
+  color: #2f3234; }
+
+.about__item {
+  text-align: center;
+  width: 300px;
+  float: left;
+  margin: 0 10px; }
+  .about__item__title {
+    font-family: lifehackmedium;
+    font-size: 24px; }
+  .about__item__text {
+    line-height: 24px; }
+
+.about__block {
+  margin: 90px 0; }

@@ -1,4 +1,4 @@
-.wrap:after {
+.wrap1:after, .wrap:after {
   content: "";
   display: block;
   clear: both; }

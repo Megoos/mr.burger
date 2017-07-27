@@ -5,7 +5,7 @@
 //         clear: both;
 //     }
 // }
-
+// переменняя $social
 // .wrap {
 //     @include clearfix;
 // }
@@ -16,6 +16,10 @@
         display: block;
         clear: both;
     }
+}
+
+.wrap1 {
+    @extend %clearfix;
 }
 
 .wrap {

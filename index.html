@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="fonts/stylesheet.css">   
-    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="/css/style.css">  
+    <link rel="stylesheet" href="/css/about.css">  
     <title>Mr.Burger</title>
 </head>
-<body>
-    
+<body>    
     <div class="wrapper">        
-        <section class="welcome-section">
+        <!-- <section class="welcome-section">
             <div class="container">
                 <header class="header clearfix">
                     <div class="header-logo">
@@ -71,7 +71,54 @@
                     </div>
                 </div>
             </div>
+        </section> -->
+        <section class="test">
+            <div class="container">
+                <p>Этот блок занимает 100% высоты области просмотра.</p>
+            </div>
         </section>
+
+        <section class="about">            
+             <div class="container">
+                <div class="about__content">
+                    <div class="title title_black title_center">
+                        мы лучшие
+                    </div>
+                    <div class="about__block">
+                        <div class="about__item">
+                            <div class="about__item__img">
+                                <img  class="img_meat" src="/icons/meat.svg" alt="meat">
+                            </div>
+                            <div class="about__item__title">100% свежее мясо</div>
+                            <div class="about__item__text">
+                                Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
+                            </div>
+                        </div>
+                        <div class="about__item">
+                            <div class="about__item__img">
+                                <img  class="img_hand" src="/icons/hand.svg" alt="hand">
+                            </div>
+                            <div class="about__item__title">Ручная сборка</div>
+                            <div class="about__item__text">
+                                Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.
+                            </div>
+                        </div>
+                        <div class="about__item">
+                            <div class="about__item__img">
+                                <img  class="img_natural" src="/icons/natural.svg" alt="natural">
+                            </div>
+                            <div class="about__item__title">Натуральные ингредиенты</div>
+                            <div class="about__item__text">
+                                Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+        </section>
+
+
+        <!-- ------navigation elements------ -->
         <div class="arrow-scroll">
             <a href="#" class="arrow-link">
                 <span class="arrow-icon">
@@ -90,16 +137,18 @@
             </a>               
         </div> 
         <div class="navigation">
-            <div class='dot active'></div>
-            <div class='dot'></div>
-            <div class='dot'></div>
-            <div class='dot'></div>
-            <div class='dot'></div> 
-            <div class='dot active'></div>
-            <div class='dot'></div>
-            <div class='dot'></div>     
+            <div class='navigation__dot navigation__dot_active'></div>
+            <div class='navigation__dot'></div>
+            <div class='navigation__dot'></div>
+            <div class='navigation__dot'></div>
+            <div class='navigation__dot'></div> 
+            <div class='navigation__dot navigation__dot_active'></div>
+            <div class='navigation__dot'></div>
+            <div class='navigation__dot'></div>     
         </div>    
     </div>
+
+    
     <!-- <footer class="footer">
 
     </footer> -->

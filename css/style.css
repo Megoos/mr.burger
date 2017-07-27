@@ -2,7 +2,8 @@ body, html {
     width: 100%;
     height: 100%;
     min-height: 650px;
-    font-size: 14px;
+    font-size: 14px;    
+    font-family: ubuntulight;
     /* line-height: 1.42em; */
 }
 
@@ -10,14 +11,14 @@ body, html {
     overflow: hidden;
     position: relative;
     min-width: 1100px;
-    height: 100%;    
+        
 }
 
-.wrapper::after {
+/* .wrapper::after {
     content: "";
     display: block;
     height: 50px;
-}
+} */
 
 .container {
     width: 960px;
@@ -57,10 +58,10 @@ a {
 /*------------- welcome-section --------------*/
 
 .welcome-section {
-    background: #070707 url(img/bg_1.jpg) no-repeat;
+    background: #070707 url(/img/bg_1.jpg) no-repeat;
     background-size: cover; 
     background-position: center;
-    height: 100%;
+    height: 100vh;
     min-height: 650px;
     position: relative;
 }
@@ -175,6 +176,7 @@ a {
 .title {
     font-family: gagalinregular;
     font-size: 72px;  
+    text-transform: uppercase;
     /* line-height: 85px;   */
 }
 
@@ -225,7 +227,7 @@ a {
     right: 10%;
 }
 
-.dot {
+.navigation__dot {
     position: relative;
     display: block;
     width: 6px;
@@ -236,7 +238,7 @@ a {
     border-radius: 50%;    
 }
 
-.active::after{
+.navigation__dot_active::after{
     border: 1px solid #fff;
     content: " ";
     display: block;
@@ -247,3 +249,6 @@ a {
     left: -6px;
     top: -6px;
 }
+
+
+/* ---------------- секция мы лучшие ---------------*/
