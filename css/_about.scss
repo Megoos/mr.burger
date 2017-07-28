@@ -1,57 +1,4 @@
-/* --------------- base settings -------------------*/
-$title-font: gagalinregular;
-$subtitle-font: lifehackmedium;
-$menu-font: ubuntumedium;
-
-%clearfix {
-    &:after{
-        content: "";
-        display: block;
-        clear: both;
-    }
-}
-
-%page {
-    position: relative;
-    height: 100vh;    
-    display: block;
-    width: 100%;
-    min-height: 650px;
-}
-
-%content__centerY {
-    display: table-cell;
-    vertical-align: middle;     
-}
-
-.title {
-    font-family: $title-font;
-    font-size: 72px;  
-    text-transform: uppercase;
-
-    &_center{
-        text-align: center;
-    }
-    &_black {
-        color: #2f3234;
-    }
-    &_white {
-        color: #fff;
-    }
-    &_yellow {
-        color: #f9b43b;
-    }
-}
-
-.subtitle {
-    font-family: $subtitle-font;
-    font-size: 65px;
-    color: #fff;
-    line-height: 60px;
-    margin-top: 20px;
-}
-
-// -------------header----------------
+/* -------------header---------------- */
 
 .header {
     width: 960px;
@@ -91,6 +38,9 @@ $menu-font: ubuntumedium;
     &:first-child::before{
         content: "";
     }
+    &_btn:before{
+        content: "";
+    }
 }    
 
 .menu__link {
@@ -114,26 +64,7 @@ $menu-font: ubuntumedium;
 //     height: 0px;
 // } 
 
-.btn {   
-    display: inline-block; 
-    background: #e45028;
-    position: relative;
-    border-radius: 5px; 
-    line-height: 35px;    
-    padding: 0 15px;
-    text-align: center;
-    &:before{
-        content: "";
-    }
-    &__link{
-        font-size: 13px;
-        color: #fff;
-        font-family: $menu-font;
-        text-transform: uppercase;
-    }
-    
-}
-// -------------welcome-section----------------
+/* -------------welcome-section---------------- */
 .welcome {
      @extend %page;
      background: #070707 url(/img/bg_1.jpg) center no-repeat;

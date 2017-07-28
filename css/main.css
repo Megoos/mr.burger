@@ -1,5 +1,41 @@
 @charset "UTF-8";
-/* --------------- base settings -------------------*/
+@font-face {
+  font-family: 'ubuntubold';
+  src: url("../fonts/ubuntu-b-webfont.woff") format("woff"), url("../fonts/ubuntu-b-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ubuntulight';
+  src: url("../fonts/ubuntu-light-webfont.woff") format("woff"), url("../fonts/ubuntu-light-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ubuntumedium';
+  src: url("../fonts/ubuntu-medium-webfont.woff") format("woff"), url("../fonts/ubuntu-medium-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ubunturegular';
+  src: url("../fonts/ubuntu-regular-webfont.woff") format("woff"), url("../fonts/ubuntu-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'lifehackmedium';
+  src: url("../fonts/lifehack_medium-webfont.woff") format("woff"), url("../fonts/lifehack_medium-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'gagalinregular';
+  src: url("../fonts/gagalin-regular-webfont.woff") format("woff"), url("../fonts/gagalin-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+/* --------------- base setting -------------------*/
 .header:after, .welcome__content:after, .about__block:after {
   content: "";
   display: block;
@@ -16,6 +52,43 @@
   display: table-cell;
   vertical-align: middle; }
 
+body, html {
+  width: 100%;
+  height: 100%;
+  min-height: 650px;
+  font-size: 14px;
+  font-family: ubuntulight; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+li {
+  list-style: none; }
+
+p {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.wrapper {
+  overflow: hidden;
+  position: relative;
+  min-width: 1100px; }
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  display: table;
+  height: 100%; }
+
+/* --------------- base elements -------------------*/
 .title {
   font-family: gagalinregular;
   font-size: 72px;
@@ -36,6 +109,21 @@
   line-height: 60px;
   margin-top: 20px; }
 
+.btn {
+  display: inline-block;
+  background: #e45028;
+  border-radius: 5px;
+  line-height: 35px;
+  padding: 0 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+  font-family: ubuntumedium;
+  text-transform: uppercase; }
+  .btn_grey {
+    background: #2f3234; }
+
+/* -------------header---------------- */
 .header {
   width: 960px;
   height: 90px;
@@ -67,6 +155,8 @@
     content: "•"; }
   .menu__item:first-child::before {
     content: ""; }
+  .menu__item_btn:before {
+    content: ""; }
 
 .menu__link {
   display: inline-block;
@@ -75,22 +165,7 @@
     color: #fff;
     font-size: 13px; }
 
-.btn {
-  display: inline-block;
-  background: #e45028;
-  position: relative;
-  border-radius: 5px;
-  line-height: 35px;
-  padding: 0 15px;
-  text-align: center; }
-  .btn:before {
-    content: ""; }
-  .btn__link {
-    font-size: 13px;
-    color: #fff;
-    font-family: ubuntumedium;
-    text-transform: uppercase; }
-
+/* -------------welcome-section---------------- */
 .welcome {
   background: #070707 url(/img/bg_1.jpg) center no-repeat;
   background-size: cover; }
@@ -188,3 +263,37 @@
 
 .review__item:hover .review__content {
   display: block; }
+
+.arrow-scroll {
+  position: fixed;
+  bottom: 5%;
+  left: 50%; }
+
+.arrow-link {
+  display: block; }
+
+.navigation {
+  position: fixed;
+  top: 10%;
+  right: 10%; }
+
+.navigation__dot {
+  position: relative;
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  cursor: pointer;
+  margin: 15px 0px;
+  border-radius: 50%; }
+
+.navigation__dot_active::after {
+  border: 1px solid #fff;
+  content: " ";
+  display: block;
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  border-radius: 50%;
+  left: -6px;
+  top: -6px; }
