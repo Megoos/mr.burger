@@ -1,4 +1,8 @@
 /* --------------- base settings -------------------*/
+$title-font: gagalinregular;
+$subtitle-font: lifehackmedium;
+$menu-font: ubuntumedium;
+
 %clearfix {
     &:after{
         content: "";
@@ -21,7 +25,7 @@
 }
 
 .title {
-    font-family: gagalinregular;
+    font-family: $title-font;
     font-size: 72px;  
     text-transform: uppercase;
 
@@ -40,13 +44,12 @@
 }
 
 .subtitle {
-    font-family: lifehackmedium;
+    font-family: $subtitle-font;
     font-size: 65px;
     color: #fff;
     line-height: 60px;
     margin-top: 20px;
 }
-
 
 // -------------header----------------
 
@@ -68,7 +71,7 @@
     margin-right: 10px;   
     float: right;    
     margin-top: 25px;
-    font-family: ubuntumedium;
+    font-family: $menu-font;
     text-align: right;
     line-height: 35px;
 }
@@ -111,16 +114,24 @@
 //     height: 0px;
 // } 
 
-.btn {    
+.btn {   
+    display: inline-block; 
     background: #e45028;
     position: relative;
-    border-radius: 5px;     
-    width: 97px;
-    height: 35px;
+    border-radius: 5px; 
+    line-height: 35px;    
+    padding: 0 15px;
     text-align: center;
     &:before{
         content: "";
     }
+    &__link{
+        font-size: 13px;
+        color: #fff;
+        font-family: $menu-font;
+        text-transform: uppercase;
+    }
+    
 }
 // -------------welcome-section----------------
 .welcome {
@@ -142,12 +153,10 @@
     &__img img{
         display: block;
         margin: auto;    
-    }
-    
+    }    
 }
 
 /* ---------------- about-section ---------------*/
-
 
 .about {
     @extend %page;       
@@ -174,11 +183,56 @@
     }
     &__title {
         margin-top: 34px;
-        font-family: lifehackmedium;
+        font-family: $subtitle-font;
         font-size: 24px;
     }
     &__text {
         line-height: 24px;
         margin-top: 25px;        
     }
+}
+
+/* ---------------- review-section ---------------*/
+
+.review {
+    @extend %page;
+    &__block{
+        width: 100%;
+        height: 100%;
+        filter: grayscale(100%);
+    }
+    &__item{        
+        float: left;
+        width: 25%;
+        height: 50%;                    
+    }
+}
+
+@each $photo in (1,2,3,4,5,6,7,8){
+    .review__item_photo-#{$photo} {
+        background: url('/photos/photo_#{$photo}.jpg') center no-repeat; 
+        background-size: cover;        
+    }
+}
+
+.review__content {    
+    height: 100%;
+    display: none;    
+    background: rgba(20, 20, 20, 0.7); 
+    color: #fff;
+    padding: 20px;
+
+    &__name{
+        font-family: $title-font;
+        font-size: 14px;
+        margin: 30px 0 25px;
+    }
+    &__text{
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+}
+
+.review__item:hover .review__content {
+    display: block;
 }

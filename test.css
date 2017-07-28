@@ -23,3 +23,27 @@
   background: url("/img/tw.png") center center no-repeat; }
   .social_tw:hover {
     background: url("/img/tw-hover.png") center center no-repeat; }
+
+/*------------- welcome-section --------------*/
+/* .welcome-section {
+    background: #070707 url(/img/bg_1.jpg) no-repeat;
+    background-size: cover; 
+    background-position: center;
+    height: 100vh;
+    min-height: 650px;
+    position: relative;
+} */
+/* 
+
+.welcome-content_text {
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translateY(-50%);
+}   
+
+.welcome-content_img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}    */
