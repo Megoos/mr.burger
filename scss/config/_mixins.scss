@@ -1,0 +1,32 @@
+@mixin circle($width, $color) {
+  width: $width;
+  height: $width;
+  border-radius: $width/2;
+  background-color: $color;
+}
+
+//responsive
+@function rem($px) {
+  @return $px / 16px+0rem;
+}
+
+%clearfix {
+    &:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+%page {
+    position: relative;
+    height: 100vh;    
+    display: block;
+    width: 100%;
+    min-height: 650px;
+}
+
+%content__centerY {
+    display: table-cell;
+    vertical-align: middle;     
+}

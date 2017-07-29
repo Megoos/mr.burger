@@ -1,0 +1,35 @@
+/* ---------------- about-section ---------------*/
+
+.about {
+    @extend %page;       
+    background: #f9f3ef url(/img/bg_2.jpg) center no-repeat;
+    background-size: cover;  
+    color: $dark;   
+    &__content {
+        @extend %content__centerY;     
+    }
+}
+
+.about__block {
+    @extend %clearfix;
+    margin: 70px 0 ;
+}
+
+.about__item {
+    text-align: center;
+    width: 300px;   
+    float: left;
+    margin: 0 10px;
+    &__img {
+        height: 92px;
+    }
+    &__title {
+        margin-top: 34px;
+        font-family: $subtitle-font;
+        font-size: 24px;
+    }
+    &__text {
+        line-height: 24px;
+        margin-top: 25px;        
+    }
+}

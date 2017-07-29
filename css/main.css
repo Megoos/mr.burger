@@ -1,41 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: 'ubuntubold';
-  src: url("../fonts/ubuntu-b-webfont.woff") format("woff"), url("../fonts/ubuntu-b-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'ubuntulight';
-  src: url("../fonts/ubuntu-light-webfont.woff") format("woff"), url("../fonts/ubuntu-light-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'ubuntumedium';
-  src: url("../fonts/ubuntu-medium-webfont.woff") format("woff"), url("../fonts/ubuntu-medium-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'ubunturegular';
-  src: url("../fonts/ubuntu-regular-webfont.woff") format("woff"), url("../fonts/ubuntu-regular-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'lifehackmedium';
-  src: url("../fonts/lifehack_medium-webfont.woff") format("woff"), url("../fonts/lifehack_medium-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'gagalinregular';
-  src: url("../fonts/gagalin-regular-webfont.woff") format("woff"), url("../fonts/gagalin-regular-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-/* --------------- base setting -------------------*/
 .header:after, .welcome__content:after, .about__block:after {
   content: "";
   display: block;
@@ -52,12 +15,52 @@
   display: table-cell;
   vertical-align: middle; }
 
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/ubuntu/ubuntu-b-webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/ubuntu/ubuntu-light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/ubuntu/ubuntu-medium-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/ubuntu/ubuntu-regular-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lifehack';
+  src: url("../fonts/lifehack_medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gagalin';
+  src: url("../fonts/gagalin-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/* --------------- base setting -------------------*/
 body, html {
   width: 100%;
   height: 100%;
   min-height: 650px;
   font-size: 14px;
-  font-family: ubuntulight; }
+  font-family: "Ubuntu";
+  font-weight: 300;
+  color: #2f3234;
+  line-height: 1.42; }
 
 ul {
   padding: 0;
@@ -73,7 +76,7 @@ p {
 a {
   text-decoration: none; }
 
-* {
+*, *::before, *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
@@ -90,7 +93,7 @@ a {
 
 /* --------------- base elements -------------------*/
 .title {
-  font-family: gagalinregular;
+  font-family: "Gagalin";
   font-size: 72px;
   text-transform: uppercase; }
   .title_center {
@@ -100,10 +103,10 @@ a {
   .title_white {
     color: #fff; }
   .title_yellow {
-    color: #f9b43b; }
+    color: #f8b43a; }
 
 .subtitle {
-  font-family: lifehackmedium;
+  font-family: "Lifehack";
   font-size: 65px;
   color: #fff;
   line-height: 60px;
@@ -111,14 +114,14 @@ a {
 
 .btn {
   display: inline-block;
-  background: #e45028;
+  background: #e25028;
   border-radius: 5px;
   line-height: 35px;
   padding: 0 15px;
   text-align: center;
   font-size: 13px;
   color: #fff;
-  font-family: ubuntumedium;
+  font-weight: 700;
   text-transform: uppercase; }
   .btn_grey {
     background: #2f3234; }
@@ -139,7 +142,7 @@ a {
   margin-right: 10px;
   float: right;
   margin-top: 25px;
-  font-family: ubuntumedium;
+  font-weight: 700;
   text-align: right;
   line-height: 35px; }
 
@@ -186,7 +189,7 @@ a {
   color: #2f3234; }
 
 .about__block {
-  margin: 88px 0; }
+  margin: 70px 0; }
 
 .about__item {
   text-align: center;
@@ -197,7 +200,7 @@ a {
     height: 92px; }
   .about__item__title {
     margin-top: 34px;
-    font-family: lifehackmedium;
+    font-family: "Lifehack";
     font-size: 24px; }
   .about__item__text {
     line-height: 24px;
@@ -254,7 +257,7 @@ a {
   color: #fff;
   padding: 20px; }
   .review__content__name {
-    font-family: gagalinregular;
+    font-family: "Gagalin";
     font-size: 14px;
     margin: 30px 0 25px; }
   .review__content__text {
@@ -295,5 +298,5 @@ a {
   width: 16px;
   position: absolute;
   border-radius: 50%;
-  left: -6px;
-  top: -6px; }
+  left: -5px;
+  top: -5px; }
