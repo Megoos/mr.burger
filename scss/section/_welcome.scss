@@ -67,7 +67,7 @@
 /* -------------welcome-section---------------- */
 .welcome {
      @extend %page;
-     background: #070707 url(img/bg_1.jpg) center no-repeat;
+     background: #070707 url(../img/bg_1.jpg) center no-repeat;
      background-size: cover;    
      &__content {
         @extend %content__centerY;

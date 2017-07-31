@@ -170,7 +170,7 @@ a {
 
 /* -------------welcome-section---------------- */
 .welcome {
-  background: #070707 url(/img/bg_1.jpg) center no-repeat;
+  background: #070707 url(../img/bg_1.jpg) center no-repeat;
   background-size: cover; }
   .welcome__content {
     padding: 0 10px; }
@@ -184,7 +184,7 @@ a {
 
 /* ---------------- about-section ---------------*/
 .about {
-  background: #f9f3ef url(img/bg_2.jpg) center no-repeat;
+  background: #f9f3ef url(../img/bg_2.jpg) center no-repeat;
   background-size: cover;
   color: #2f3234; }
 
@@ -219,35 +219,35 @@ a {
   height: 50%; }
 
 .review__item_photo-1 {
-  background: url("/photos/photo_1.jpg") center no-repeat;
+  background: url("../photos/photo_1.jpg") center no-repeat;
   background-size: cover; }
 
 .review__item_photo-2 {
-  background: url("/photos/photo_2.jpg") center no-repeat;
+  background: url("../photos/photo_2.jpg") center no-repeat;
   background-size: cover; }
 
 .review__item_photo-3 {
-  background: url("/photos/photo_3.jpg") center no-repeat;
+  background: url("../photos/photo_3.jpg") center no-repeat;
   background-size: cover; }
 
 .review__item_photo-4 {
-  background: url("/photos/photo_4.jpg") center no-repeat;
+  background: url("../photos/photo_4.jpg") center no-repeat;
   background-size: cover; }
 
 .review__item_photo-5 {
-  background: url("/photos/photo_5.jpg") center no-repeat;
+  background: url("../photos/photo_5.jpg") center no-repeat;
   background-size: cover; }
 
 .review__item_photo-6 {
-  background: url("/photos/photo_6.jpg") center no-repeat;
+  background: url("../photos/photo_6.jpg") center no-repeat;
   background-size: cover; }
 
 .review__item_photo-7 {
-  background: url("/photos/photo_7.jpg") center no-repeat;
+  background: url("../photos/photo_7.jpg") center no-repeat;
   background-size: cover; }
 
 .review__item_photo-8 {
-  background: url("/photos/photo_8.jpg") center no-repeat;
+  background: url("../photos/photo_8.jpg") center no-repeat;
   background-size: cover; }
 
 .review__content {
