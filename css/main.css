@@ -184,7 +184,7 @@ a {
 
 /* ---------------- about-section ---------------*/
 .about {
-  background: #f9f3ef url(/img/bg_2.jpg) center no-repeat;
+  background: #f9f3ef url(img/bg_2.jpg) center no-repeat;
   background-size: cover;
   color: #2f3234; }
 
