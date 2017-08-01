@@ -1,0 +1,49 @@
+.wrap1:after, .wrap:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.social {
+  display: block;
+  margin-bottom: 20px;
+  width: 30px;
+  height: 30px; }
+
+.social_fb {
+  background: url("/img/fb.png") center center no-repeat; }
+  .social_fb:hover {
+    background: url("/img/fb-hover.png") center center no-repeat; }
+
+.social_vk {
+  background: url("/img/vk.png") center center no-repeat; }
+  .social_vk:hover {
+    background: url("/img/vk-hover.png") center center no-repeat; }
+
+.social_tw {
+  background: url("/img/tw.png") center center no-repeat; }
+  .social_tw:hover {
+    background: url("/img/tw-hover.png") center center no-repeat; }
+
+/*------------- welcome-section --------------*/
+/* .welcome-section {
+    background: #070707 url(/img/bg_1.jpg) no-repeat;
+    background-size: cover; 
+    background-position: center;
+    height: 100vh;
+    min-height: 650px;
+    position: relative;
+} */
+/* 
+
+.welcome-content_text {
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translateY(-50%);
+}   
+
+.welcome-content_img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}    */

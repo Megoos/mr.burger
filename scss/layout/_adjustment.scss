@@ -45,10 +45,10 @@
 
 .subtitle {
     font-family: $subtitle-font;
-    font-size: 65px;
+    font-size: 62px;
     color: #fff;
     line-height: 60px;
-    margin-top: 20px;
+    margin-top: 11px;
 }
 
 .btn {    
@@ -62,8 +62,14 @@
     color: #fff;
     font-weight: 700;
     text-transform: uppercase;  
+    &:hover {
+        background-color: darken($orange, 7%);
+    }
 
     &_grey{
         background: $dark;
+        &:hover {
+            background-color: darken($dark, 7%);
+        }
     }
 }

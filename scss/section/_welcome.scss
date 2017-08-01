@@ -10,14 +10,14 @@
 .header__logo {
     float: left;
     width: 92px;
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-left: 8px;
+    margin-top: 12px;
 }
 
 .header__menu {
     margin-right: 10px;   
     float: right;    
-    margin-top: 25px;
+    margin-top: 28px;
     font-weight: 700;
     text-align: right;
     line-height: 35px;
@@ -46,10 +46,13 @@
 .menu__link {
     display: inline-block;
     padding: 0px 12px;  
-    &_text {
-        color: #fff;
-        font-size: 13px;
-    } 
+    text-transform: uppercase;    
+    color: #fff;
+    font-size: 13px;  
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 //  .menu {
@@ -78,11 +81,19 @@
             // float: left;    
             display: table-cell;
             vertical-align: middle;         
-        }   
+        }      
+    } 
+
+    &__text {
+        padding-left: 10px;
+        margin-top: -17px;
     } 
 
     &__img img{
         display: block;
-        margin: auto;    
-    }    
+        margin-top: -80px;
+        margin-left: 16px;   
+    } 
+    
+    
 }

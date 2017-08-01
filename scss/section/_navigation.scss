@@ -1,17 +1,20 @@
 .arrow-scroll {
-    position: fixed;
-    bottom: 5%;
-    left: 50%;
+    position: absolute;
+    bottom: 36px;
+    left: 535px;
 }
 
 .arrow-link {
-    display: block;
+    display: block;  
+    &:hover {
+        border-bottom: 1px solid #fff;
+    }  
 }
 
 .navigation {
     position: fixed;
-    top: 10%;
-    right: 10%;
+    top: 12.5%;
+    right: 5%;
 }
 
 .navigation__dot {
@@ -22,17 +25,18 @@
     background: #fff;
     cursor: pointer;   
     margin: 15px 0px; 
-    border-radius: 50%;    
+    border-radius: 50%; 
+
+    &_active:after, &:hover:after{
+        border: 1px solid #fff;
+        content: "";
+        display: block;
+        height: 16px;
+        width: 16px;
+        position: absolute;
+        border-radius: 50%;
+        left: -5px;
+        top: -5px;
+    }  
 }
 
-.navigation__dot_active::after{
-    border: 1px solid #fff;
-    content: " ";
-    display: block;
-    height: 16px;
-    width: 16px;
-    position: absolute;
-    border-radius: 50%;
-    left: -5px;
-    top: -5px;
-}

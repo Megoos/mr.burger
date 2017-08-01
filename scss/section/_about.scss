@@ -11,8 +11,9 @@
 }
 
 .about__block {
-    @extend %clearfix;
-    margin: 70px 0 ;
+    @extend %clearfix;    
+    margin-top: 60px;
+    margin-bottom: 120px;
 }
 
 .about__item {
@@ -24,12 +25,13 @@
         height: 92px;
     }
     &__title {
-        margin-top: 34px;
+        margin-top: 27px;
         font-family: $subtitle-font;
         font-size: 24px;
+        line-height: 28px;
     }
     &__text {
         line-height: 24px;
-        margin-top: 25px;        
+        margin-top: 10px;        
     }
 }
