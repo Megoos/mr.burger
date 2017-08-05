@@ -1,0 +1,84 @@
+.menu {
+    background: url('../img/bg/bg_4.jpg') center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.menu__wrapper {
+    height: 100%;
+    justify-content: flex-start;
+}
+
+.menu__title {
+    margin-top: 9%;
+    margin-left: 15px;
+}
+
+.menu__content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.menu-acco {
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.menu-acco__item {
+    display: flex;
+    justify-content: flex-end;
+
+    &.active {
+        width: 50%;
+        .menu-acco__content {
+        width: auto;        
+        }
+    }
+}
+
+.menu-acco__title {
+    width: 80px;
+    @include gagalin();
+    font-size: 40px;
+    line-height: 64px;
+    color: #fff; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: center no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &::before {
+        content: "";
+        background: rgba(#141414, .7);        
+        display: block;
+        height: 100%;        
+        position: absolute;        
+        width: 100%;
+    }
+}
+
+.menu-acco__deg {    
+    white-space: nowrap;
+    transform: rotate(-90deg);    
+}
+
+.menu-acco__content {
+    background: rgba($black, .93);
+    display: flex;   
+    justify-content: center;
+    overflow: hidden;
+    width: 0; 
+}
+
+.menu-acco__desc {
+    color: #fff;
+    width: 80%;
+    margin-top: 20%;    
+    line-height: 24px;
+    font-size: 14px;
+}

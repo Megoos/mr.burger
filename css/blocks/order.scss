@@ -1,0 +1,156 @@
+.order {
+  background: url("../img/bg/bg_5.jpg") 50% no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  .section-title {
+    text-align: center;
+  }
+}
+
+.order__form-tag {
+  padding-top: 50px;
+  padding-bottom: 90px;
+}
+
+.order__form {
+  margin-left: -20px;
+  display: flex;
+  
+}
+
+.order__form-col {
+  width: 460px;
+  margin-left: 20px;
+}
+
+.order__form-row {
+  margin-bottom: 15px;
+  display: flex;
+  margin-left: -15px;
+}
+
+.order__form-label {
+  margin-bottom: 7px;
+  @include ubuntu();
+  color: #fff;
+  font-size: 14px;
+}
+
+.order__form-input {
+  font-size: 14px;  
+  padding: 8px 10px;
+  border: 1px solid #d1cfcb;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.order__form-block {
+  display: block;
+  width: 100%;
+  flex: 1;
+  margin-left: 15px;
+}
+
+.order__form-input_textarea {
+  height: 110px;
+  resize: none;
+}
+
+.order__radio {
+  position: relative;
+  white-space: nowrap;
+  margin-right: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.order__radio-elem {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+}
+
+.order__radio-fake {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  position: relative;
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background: $red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+}
+
+.order__radio-elem:checked {
+  &+.order__radio-fake {
+    &:after {
+      width: 8px;
+      height: 8px;
+    }
+  }
+}
+
+.order__radio-title {
+  font-size: 14px;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.order__radio_checkbox {
+  .order__radio-fake {
+    border-radius: 3px;
+  }
+  .order__radio-elem {
+    &+.order__radio-fake {
+      &:after {
+        background: transparent;
+      }
+    }
+  }
+  .order__radio-elem:checked {
+    &+.order__radio-fake {
+      &:after {
+        background: url("../img/icons/ch.png") center no-repeat transparent;
+        background-size: contain;
+        width: 70%;
+        height: 70%;
+      }
+    }
+  }
+}
+
+.order__form-buttons {
+  margin-left: 14px;
+}
+
+.order__form-button {
+  margin-right: 20px;
+  border: 0;
+  background: $red;
+  font-size: 13px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  color: #ffffff;
+  @include ubuntu(middle);
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.order__form-button_reset {
+  padding-left: 0;
+  padding-right: 0;
+  text-transform: none;
+  background: transparent;
+}
