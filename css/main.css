@@ -1,10 +1,10 @@
 @charset "UTF-8";
-.header:after, .welcome__content:after, .about__block:after {
+.header:after, .welcome__content:after, .about__block:after, .people__info:after {
   content: "";
   display: block;
   clear: both; }
 
-.welcome, .about, .review {
+.welcome, .about, .review, .burgers, .team {
   position: relative;
   height: 100vh;
   display: block;
@@ -89,7 +89,8 @@ a {
   width: 960px;
   margin: 0 auto;
   display: table;
-  height: 100%; }
+  height: 100%;
+  position: relative; }
 
 /* --------------- base elements -------------------*/
 .title {
@@ -192,6 +193,16 @@ a {
     margin-top: -80px;
     margin-left: 16px; }
 
+.arrow-scroll {
+  position: absolute;
+  bottom: 36px;
+  left: 465px; }
+
+.arrow-link {
+  display: block; }
+  .arrow-link:hover {
+    border-bottom: 1px solid #fff; }
+
 /* ---------------- about-section ---------------*/
 .about {
   background: #f9f3ef url(../img/bg_2.jpg) center no-repeat;
@@ -279,16 +290,6 @@ a {
 .review__item:hover .review__content {
   display: block; }
 
-.arrow-scroll {
-  position: absolute;
-  bottom: 36px;
-  left: 535px; }
-
-.arrow-link {
-  display: block; }
-  .arrow-link:hover {
-    border-bottom: 1px solid #fff; }
-
 .navigation {
   position: fixed;
   top: 12.5%;
@@ -313,3 +314,64 @@ a {
     border-radius: 50%;
     left: -5px;
     top: -5px; }
+
+.burgers {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f9b43b), color-stop(40%, #eb8c38), color-stop(60%, #eb8c38), color-stop(0, #eb8c38), to(#f9b43b));
+  background: -webkit-linear-gradient(top, #f9b43b 0, #eb8c38 40%, #eb8c38 60%, #eb8c38 0, #f9b43b);
+  background: -o-linear-gradient(top, #f9b43b 0, #eb8c38 40%, #eb8c38 60%, #eb8c38 0, #f9b43b);
+  background: linear-gradient(180deg, #f9b43b 0, #eb8c38 40%, #eb8c38 60%, #eb8c38 0, #f9b43b); }
+
+.team {
+  background: #070707 url(../img/bg_3.jpg) center no-repeat/cover; }
+  .team__block {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background: rgba(47, 50, 52, 0.93);
+    left: 50%;
+    color: #fff;
+    padding-left: 80px;
+    padding-top: 5%; }
+  .team__people {
+    margin-top: 50px; }
+
+.people {
+  position: relative;
+  margin-bottom: 40px; }
+  .people:before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 5px 5px 5px;
+    border-color: transparent transparent #f8b43a transparent;
+    margin-right: 10px; }
+  .people__info {
+    padding-top: 17px;
+    height: 0;
+    overflow: hidden; }
+  .people__name {
+    font-family: "Gagalin";
+    font-size: 14px;
+    display: inline-block; }
+  .people__img {
+    float: left;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background: center no-repeat / cover;
+    margin: 0 17px; }
+  .people__post {
+    font-weight: 900; }
+  .people__comment {
+    margin-top: 20px;
+    width: 210px;
+    display: inline-block; }
+  .people_active .people__name {
+    color: #f8b43a; }
+  .people_active .people__info {
+    height: 100%; }
+  .people_active:before {
+    border-width: 5px 5px 0 5px;
+    border-color: #f8b43a transparent transparent transparent; }

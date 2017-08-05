@@ -68,7 +68,7 @@
 // } 
 
 /* -------------welcome-section---------------- */
-.welcome {
+.welcome {    
      @extend %page;
      background: #070707 url(../img/bg_1.jpg) center no-repeat;
      background-size: cover;    
@@ -93,7 +93,19 @@
         display: block;
         margin-top: -80px;
         margin-left: 16px;   
-    } 
+    }     
     
-    
+}
+
+.arrow-scroll {
+    position: absolute;
+    bottom: 36px;
+    left: 465px;
+}
+
+.arrow-link {
+    display: block;  
+    &:hover {
+        border-bottom: 1px solid #fff;
+    }  
 }
