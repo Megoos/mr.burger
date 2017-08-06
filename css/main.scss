@@ -5,8 +5,17 @@ $black: #2f3234;
 $red: #e35028;
 $green: #8ac03e;
 
+// resolutions
+$desktop: 1200px;
+$laptop: 992px;
+$tablets: 768px;
+$phones: 480px;
+
 //normalize
 @import "_misc/normalize.scss";
+
+// media
+@import "_misc/media";
 
 // setups
 @import "_misc/mixins";
