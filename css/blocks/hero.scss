@@ -1,5 +1,5 @@
 .hero {
-  background: url('./img/bg/bg_1.jpg') center center no-repeat;
+  background: url('../img/bg/bg_1.jpg') center center no-repeat;
   background-size: cover;
   justify-content: flex-start;
   position: relative;
@@ -7,14 +7,23 @@
 
 .hero__wrapper {
   height: 75%;
+
+  @include tablets {
+    height: auto;
+  }
 }
 
 .header {
   display: flex;
   align-items: center;
-  margin-top: 10px;
+  margin-top: rem(10px);
   @include ubuntu(medium);
-  font-size: 13px;
+  font-size: rem(13px);
+
+  @include tablets {
+    margin-left: rem(10px);
+    margin-right: rem(10px);
+  }
 }
 
 .header__btns {
@@ -23,12 +32,20 @@
   margin-left: auto;
 }
 
+.header__links {
+  display: flex;
+  align-items: center;
+}
+
 .logo__img {
-  max-height: 69px;
+  max-height: rem(69px);
 }
 
 .nav {
-  margin-right: 15px;
+  margin-right: rem(15px);
+  @include tablets {
+    display: none;
+  }
 }
 .nav__list {
   display: flex;
@@ -48,17 +65,17 @@
   &:after {
     content: "";
     display: block;
-    width: 4px;
-    height: 4px;
+    width: rem(4px);
+    height: rem(4px);
     background: #fff;
     border-radius: 50%;
-    margin: 0 16px;
+    margin: 0 rem(16px);
   }
 }
 
 .nav__link {
   color: #fff;
-  font-size: 13px;
+  font-size: rem(13px);
   text-transform: uppercase;
   text-decoration: none;
   &:hover {
@@ -69,26 +86,44 @@
 .hero__present {
   display: flex;
   align-items: center;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 15%;
+  }
 }
 
 .hero__desc {
   color: #fff;
-  font-size: 65px;
+  font-size: rem(65px);
   @include lifehack();
-  line-height: 60px;
+  line-height: rem(60px);
 }
 
 .hero__image, .hero__text {
-  flex-basis: 470px;  
-  margin-left: 10px;
+  flex-basis: rem(470px);  
+  margin-left: rem(10px);
+  @include tablets {
+    margin-left: 0;
+  }
 }
 
 .hero__text {
-  margin-top: 60px;
+  margin-top: rem(60px);
+
+  @include tablets {
+    margin-top: rem(8px);
+  } 
 }
 
 .hero__image-pic {
   max-width: 100%;
+
+  @include tablets {
+    margin-top: rem(68px);
+  }  
 }
 
 .hero__container {
@@ -99,26 +134,26 @@
 }
 
 .arrow__scroll {
-  width: 30px;
-  height: 30px;
+  width: rem(30px);
+  height: rem(30px);
   position: absolute;
-  // bottom: 36px;
+  // bottom: rem(36px);
   left: 35%;
 }
 
 .arrow__link {
   position: absolute;
-  height: 30px;
-  left: 48.5%;
-  bottom: 33px;
+  height: rem(30px);
+  left: calc(50% - 15px);
+  bottom: rem(33px);
    // display: block;  
     &:hover {
-        border-bottom: 2px solid #fff;
+        border-bottom: rem(2px) solid #fff;
     }  
 }
 
 .arrow__icon {
   fill: #fff;
-  height: 30px;
-  width: 30px;
+  height: rem(30px);
+  width: rem(30px);
 }

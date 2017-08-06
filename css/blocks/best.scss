@@ -1,36 +1,44 @@
 .best {
-  background: url('./img/bg/bg_2.jpg') center center no-repeat;
+  background: url('../img/bg/bg_2.jpg') center center no-repeat;
   background-size: cover;
   text-align: center;
- 
+  flex-direction: column;
+  justify-content: center; 
 }
 
 .best__wrap {
-  margin-bottom: 125px;
-  
+  margin-bottom: rem(125px);
+
+  @include tablets {
+    margin-bottom: 40%;
+  }  
 }
 
 .best__item {
-  margin: 0 10px;
+  margin: 0 rem(10px);
   flex: 1;
- // width: 300px;
+ // width: rem(300px);
 }
 
 .best__title{
-  font-size: 24px;
+  font-size: rem(24px);
   @include lifehack();
-  line-height: 28px;  
-  margin-bottom: 13px;
+  line-height: rem(28px);  
+  margin-bottom: rem(13px);
 }
 .best__list {
-  padding-top: 50px;
+  padding-top: rem(50px);
   display: flex;
   justify-content: space-between;
+
+  @include tablets {
+    padding-top: rem(150px);
+  }
 }
 
 .best__pic {
-  height: 90px;
-  margin-bottom: 32px;
+  height: rem(90px);
+  margin-bottom: rem(32px);
 }
 
 .best__icon {
@@ -48,7 +56,7 @@
 }
 
 .best__dest {
-  line-height: 24px;
-  font-size: 14px;
+  line-height: rem(24px);
+  font-size: rem(14px);
 }
 
