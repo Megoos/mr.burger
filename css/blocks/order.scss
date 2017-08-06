@@ -1,5 +1,5 @@
 .order {
-  background: url("../img/bg/bg_5.jpg") 50% no-repeat;
+  background: url("../img/bg/bg_5.jpg") center no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -9,29 +9,57 @@
 }
 
 .order__form-tag {
-  padding-top: 50px;
-  padding-bottom: 90px;
+  padding-top: rem(50px);
+  padding-bottom: rem(90px);
+
+  @include tablets() {
+    padding-bottom: 0;
+  }
+
+  @include phones {
+    padding-top: rem(20px);
+    padding-bottom: 0;
+  }
 }
 
 .order__form {
-  margin-left: -20px;
+  margin-left: rem(-20px);
   display: flex;
-  
+
+  @include tablets() {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }  
 }
 
 .order__form-col {
-  width: 460px;
-  margin-left: 20px;
+  width: 50%;
+  margin-left: rem(20px);
+
+  @include tablets() {    
+    margin-left: 0;
+    width: 63%;
+  } 
+
+  @include phones {
+    width: 100%;    
+  }
 }
 
 .order__form-row {
-  margin-bottom: 15px;
+  margin-bottom: rem(15px);
   display: flex;
-  margin-left: -15px;
+  margin-left: rem(-15px);
+
+  @include tablets() {
+    margin-left: rem(-20px);
+    margin-bottom: rem(20px);
+  }
 }
 
 .order__form-label {
-  margin-bottom: 7px;
+  margin-bottom: rem(7px);
   @include ubuntu();
   color: #fff;
   font-size: 14px;
@@ -49,7 +77,11 @@
   display: block;
   width: 100%;
   flex: 1;
-  margin-left: 15px;
+  margin-left: rem(15px);
+
+  @include tablets() {
+    margin-left: rem(20px);
+  }
 }
 
 .order__form-input_textarea {
@@ -57,10 +89,21 @@
   resize: none;
 }
 
+.order__form-buttons {
+  margin-left: rem(14px);
+   
+  .order__form-row {
+    @include phones {      
+      justify-content: center;
+      padding-top: rem(20px);
+    }
+  }  
+}
+
 .order__radio {
   position: relative;
   white-space: nowrap;
-  margin-right: 20px;
+  margin-right: rem(20px);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -69,12 +112,12 @@
 .order__radio-elem {
   position: absolute;
   top: 0;
-  left: -9999px;
+  left: rem(-9999px);
 }
 
 .order__radio-fake {
-  width: 16px;
-  height: 16px;
+  width: rem(16px);
+  height: rem(16px);
   border-radius: 50%;
   background: #fff;
   position: relative;
@@ -82,8 +125,8 @@
     content: "";
     display: block;
     position: absolute;
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     border-radius: 50%;
     background: $red;
     top: 50%;
@@ -96,8 +139,8 @@
 .order__radio-elem:checked {
   &+.order__radio-fake {
     &:after {
-      width: 8px;
-      height: 8px;
+      width: rem(8px);
+      height: rem(8px);
     }
   }
 }
@@ -105,12 +148,12 @@
 .order__radio-title {
   font-size: 14px;
   color: #fff;
-  margin-left: 10px;
+  margin-left: rem(10px);
 }
 
 .order__radio_checkbox {
   .order__radio-fake {
-    border-radius: 3px;
+    border-radius: rem(3px);
   }
   .order__radio-elem {
     &+.order__radio-fake {
@@ -131,21 +174,18 @@
   }
 }
 
-.order__form-buttons {
-  margin-left: 14px;
-}
-
 .order__form-button {
-  margin-right: 20px;
+  margin-right: rem(20px);
   border: 0;
   background: $red;
   font-size: 13px;
   text-transform: uppercase;
-  border-radius: 5px;
+  border-radius: rem(5px);
   color: #ffffff;
   @include ubuntu(middle);
-  padding: 10px 15px;
+  padding: rem(10px) rem(15px);
   cursor: pointer;
+  
 }
 
 .order__form-button_reset {
@@ -153,4 +193,17 @@
   padding-right: 0;
   text-transform: none;
   background: transparent;
+}
+
+.order__order-btn {
+  @include tablets() {
+      margin-top: rem(25px);
+  }
+}
+
+.order .section-title {
+  @include phones {
+    font-size: 50px;
+    line-height: 60px;
+  }  
 }

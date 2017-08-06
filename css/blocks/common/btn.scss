@@ -1,13 +1,13 @@
 .btn {
-  padding: 0 rem(15px);
-  line-height: rem(35px);
+  padding: 0 15px;
+  line-height: 35px;
   background: $red;
   text-decoration: none;
   text-transform: uppercase;
-  border-radius: rem(5px);
+  border-radius: 5px;
   color: #fff;
   display: inline-flex;
-  font-size: rem(13px);
+  font-size: 13px;
   @include ubuntu(medium);
     &:hover {
        background-color: darken($red, 7%);

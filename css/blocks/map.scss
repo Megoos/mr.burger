@@ -18,20 +18,32 @@
   bottom: 0;
   left: 0;
   right: 0;
-  //padding: 10px 0;
+  //padding: rem(10px) 0;
 }
 
 .footer__container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  
+
+  @include phones {
+    flex-direction: column;
+  }  
 }
 
 .footer__col {
   width: 50%;
- padding: 10px 0;
+  padding: 10px 0;  
   
+  @include tablets() {
+    margin: 0 rem(5px);
+  }
+
+  @include phones {
+    width: 100%;
+    text-align: center;
+    padding: 13px 0;
+  }
 }
 
 .footer__address {
@@ -44,12 +56,12 @@
   @include ubuntu(bold);
   text-decoration: none;
   font-size: 14px; 
-  margin-left: 5px; 
+  margin-left: rem(5px); 
 }
 
 .footer__phone-icon {
-  width: 10px;
-  height: 10px;
+  width: rem(10px);
+  height: rem(10px);
   fill: $red;
 }
 
@@ -58,6 +70,10 @@
   margin-bottom: 0;
   display: flex;
   justify-content: flex-end;  
+
+  @include phones {
+    justify-content: center;
+  }
 }
 
 .socials {
@@ -65,6 +81,10 @@
   top: 50%;
   display: flex;
   align-items: center;
+
+  @include phones {
+    margin-left: -20px;
+  }
 }
 
 .socials__item {

@@ -16,7 +16,7 @@
 .header {
   display: flex;
   align-items: center;
-  margin-top: rem(10px);
+  margin-top: 10px;
   @include ubuntu(medium);
   font-size: rem(13px);
 
@@ -38,7 +38,7 @@
 }
 
 .logo__img {
-  max-height: rem(69px);
+  max-height: 69px;
 }
 
 .nav {
@@ -93,6 +93,10 @@
     text-align: center;
     padding: 0 15%;
   }
+
+  @include phones() {
+    padding: 0 10%;
+  }
 }
 
 .hero__desc {
@@ -116,6 +120,10 @@
   @include tablets {
     margin-top: rem(8px);
   } 
+
+  @include phones {
+    margin-top: rem(30px);
+  } 
 }
 
 .hero__image-pic {
@@ -123,6 +131,10 @@
 
   @include tablets {
     margin-top: rem(68px);
+  }  
+
+  @include phones {
+    margin-top: rem(40px);
   }  
 }
 
@@ -143,17 +155,17 @@
 
 .arrow__link {
   position: absolute;
-  height: rem(30px);
+  height: 30px;
   left: calc(50% - 15px);
-  bottom: rem(33px);
+  bottom: 33px;
    // display: block;  
     &:hover {
-        border-bottom: rem(2px) solid #fff;
+        border-bottom: 2px solid #fff;
     }  
 }
 
 .arrow__icon {
   fill: #fff;
-  height: rem(30px);
-  width: rem(30px);
+  height: 30px;
+  width: 30px;
 }

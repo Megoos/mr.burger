@@ -8,7 +8,12 @@
 .menu__title {
     position: absolute;
 	top: 10%;
-	left: 10%;
+    left: 10%;
+    
+    @include tablets() {
+        top: 8%;
+        left: 3%;
+    }
 }
 
 .menu__content {
@@ -30,17 +35,33 @@
 
     &.active {
         width: 50%;
+
         .menu-acco__content {
-        width: auto;        
+            width: 100%;        
+        }
+
+        @include tablets() {
+            width: 100%;
         }
     }
+}
+
+.menu-acco__wrap-title {
+    @include tablets() {
+        width: 100%;
+        margin-bottom: rem(50px);
+    } 
+
+    @include tablets() {       
+        margin-bottom: rem(100px);
+    } 
 }
 
 .menu-acco__title {
     width: 80px;
     @include gagalin();
-    font-size: 40px;
-    line-height: 64px;
+    font-size: rem(40px);
+    line-height: rem(64px);
     color: #fff; 
     justify-content: center;
     align-items: center;
@@ -57,11 +78,16 @@
         position: absolute;        
         width: 100%;
     }
+
+    @include tablets() {
+        align-items: flex-end;  
+        width: 60px;      
+    } 
 }
 
 .menu-acco__deg {    
     white-space: nowrap;
-    transform: rotate(-90deg);    
+    transform: rotate(-90deg);  
 }
 
 .menu-acco__content {
@@ -76,6 +102,10 @@
     color: #fff;
     width: 80%;
     margin-top: 20%;    
-    line-height: 24px;
-    font-size: 14px;
+    line-height: rem(24px);
+    font-size: rem(14px);
+    
+    @include tablets() {
+        width: 90%;        
+    } 
 }
