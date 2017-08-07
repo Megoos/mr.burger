@@ -14,7 +14,7 @@
   }  
 
   @include phones {
-    margin-bottom: 10%;
+    margin-bottom: 20%;
   } 
 }
 
@@ -22,7 +22,7 @@
 
   @include phones {
     text-align: left;
-    margin-left: rem(40px);
+    margin-left: 7%;
   }  
 }
 
@@ -32,8 +32,7 @@
   line-height: rem(28px);  
   margin-bottom: rem(13px);
 
-  @include phones {
-    font-size: rem(28px);
+  @include phones {    
     margin-bottom: rem(20px);
   }
 }
@@ -49,7 +48,7 @@
 
   @include phones {
     flex-direction: column;
-    padding-top: rem(60px);
+    padding-top: 12%;
   }
 }
 
@@ -69,8 +68,8 @@
 }
 
 .best__pic {
- height: 90px;
- width: 90px;
+ height: rem(90px);
+ width: rem(90px);
  margin: 0 auto;
   margin-bottom: rem(32px);
   @include phones {
@@ -80,8 +79,8 @@
 }
 
 .best__icon {
-  max-width: 90px;
-  max-height: 90px;
+  max-width: rem(90px);
+  max-height: rem(90px);
   &_green{
     fill: $green;
   }
@@ -94,7 +93,7 @@
 }
 
 .best__dest {
-  line-height: 24px;
-  font-size: 14px;
+  line-height: rem(24px);
+  font-size: rem(14px);
 }
 

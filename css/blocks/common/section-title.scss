@@ -10,5 +10,9 @@
   &_color_white {
     color: #fff;
   }
+
+  @include phones {
+      font-size: 50px;
+    }
 }
 

@@ -83,6 +83,11 @@
         align-items: flex-end;  
         width: 60px;      
     } 
+
+    @include phones {
+        align-items: flex-end;  
+        width: 45px;      
+    } 
 }
 
 .menu-acco__deg {    

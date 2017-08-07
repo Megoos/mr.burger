@@ -532,6 +532,9 @@ footer {
     color: #2f3234; }
   .section-title_color_white {
     color: #fff; }
+  @media screen and (max-width: 480px) {
+    .section-title {
+      font-size: 50px; } }
 
 .fixed-menu {
   position: fixed;
@@ -701,6 +704,9 @@ footer {
   font-size: 4.0625rem;
   font-family: 'Lifehack-Medium';
   line-height: 3.75rem; }
+  @media screen and (max-width: 480px) {
+    .hero__desc {
+      font-size: 3.75rem; } }
 
 .hero__image, .hero__text {
   -webkit-flex-basis: 29.375rem;
@@ -822,12 +828,12 @@ footer {
       margin-bottom: 10%; } }
   @media screen and (max-width: 480px) {
     .best__wrap {
-      margin-bottom: 10%; } }
+      margin-bottom: 20%; } }
 
 @media screen and (max-width: 480px) {
   .best__desc {
     text-align: left;
-    margin-left: 2.5rem; } }
+    margin-left: 7%; } }
 
 .best__title {
   font-size: 1.5rem;
@@ -836,7 +842,6 @@ footer {
   margin-bottom: 0.8125rem; }
   @media screen and (max-width: 480px) {
     .best__title {
-      font-size: 1.75rem;
       margin-bottom: 1.25rem; } }
 
 .best__list {
@@ -859,7 +864,7 @@ footer {
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
       flex-direction: column;
-      padding-top: 3.75rem; } }
+      padding-top: 12%; } }
 
 .best__item {
   margin: 0 0.625rem;
@@ -882,8 +887,8 @@ footer {
       margin-bottom: 3.75rem; } }
 
 .best__pic {
-  height: 90px;
-  width: 90px;
+  height: 5.625rem;
+  width: 5.625rem;
   margin: 0 auto;
   margin-bottom: 2rem; }
   @media screen and (max-width: 480px) {
@@ -892,8 +897,8 @@ footer {
       margin-left: 1.25rem; } }
 
 .best__icon {
-  max-width: 90px;
-  max-height: 90px; }
+  max-width: 5.625rem;
+  max-height: 5.625rem; }
   .best__icon_green {
     fill: #8ac03e; }
   .best__icon_yellow {
@@ -902,8 +907,8 @@ footer {
     fill: #e35028; }
 
 .best__dest {
-  line-height: 24px;
-  font-size: 14px; }
+  line-height: 1.5rem;
+  font-size: 0.875rem; }
 
 .burgers {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f9b43b), color-stop(40%, #eb8c38), color-stop(60%, #eb8c38), color-stop(0, #eb8c38), to(#f9b43b));
@@ -972,7 +977,7 @@ footer {
     margin-right: 0.625rem; }
   @media screen and (max-width: 768px) {
     .team-acco__title {
-      font-size: 25px;
+      font-size: 1.5625rem;
       display: -webkit-inline-box;
       display: -webkit-inline-flex;
       display: -ms-inline-flexbox;
@@ -985,7 +990,7 @@ footer {
       margin-top: 7.1875rem; } }
   @media screen and (max-width: 480px) {
     .team-acco {
-      margin-top: 5.625rem; } }
+      margin-top: 15%; } }
 
 .team-acco__item {
   margin-bottom: 1.9375rem; }
@@ -1159,6 +1164,13 @@ footer {
       -ms-flex-align: end;
       align-items: flex-end;
       width: 60px; } }
+  @media screen and (max-width: 480px) {
+    .menu-acco__title {
+      -webkit-box-align: end;
+      -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+      width: 45px; } }
 
 .menu-acco__deg {
   white-space: nowrap;
@@ -1360,13 +1372,13 @@ footer {
   font-family: 'Ubuntu', Helvetica, sans-serif;
   font-weight: 300;
   color: #fff;
-  font-size: 14px; }
+  font-size: 0.875rem; }
 
 .order__form-input {
-  font-size: 14px;
-  padding: 8px 10px;
-  border: 1px solid #d1cfcb;
-  border-radius: 5px;
+  font-size: 0.875rem;
+  padding: 0.5rem 0.625rem;
+  border: 0.0625rem solid #d1cfcb;
+  border-radius: 0.3125rem;
   width: 100%; }
 
 .order__form-block {
@@ -1382,7 +1394,7 @@ footer {
       margin-left: 1.25rem; } }
 
 .order__form-input_textarea {
-  height: 110px;
+  height: 6.875rem;
   resize: none; }
 
 .order__form-buttons {
@@ -1439,7 +1451,7 @@ footer {
   height: 0.5rem; }
 
 .order__radio-title {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #fff;
   margin-left: 0.625rem; }
 
@@ -1475,14 +1487,16 @@ footer {
 
 @media screen and (max-width: 768px) {
   .order__order-btn {
-    margin-top: 1.5625rem; } }
+    margin-top: 0.3125rem; } }
 
 @media screen and (max-width: 480px) {
   .order .section-title {
-    font-size: 50px;
+    font-size: 32px;
     line-height: 60px; } }
 
 .map {
+  background: url("../img/content/map.png") center no-repeat;
+  background-size: cover;
   position: relative; }
 
 .yandex-map {
