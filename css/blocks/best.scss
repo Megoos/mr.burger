@@ -10,11 +10,11 @@
   margin-bottom: rem(125px);
 
   @include tablets {
-    margin-bottom: 10%;
+    margin-bottom: 37%;
   }  
 
   @include phones {
-    margin-bottom: 20%;
+    margin-bottom: 21%;
   } 
 }
 
@@ -22,18 +22,26 @@
 
   @include phones {
     text-align: left;
-    margin-left: 7%;
+    margin-left: 6.5%;
   }  
 }
 
 .best__title{
-  font-size: rem(24px);
+  font-size: 24px;
   @include lifehack();
   line-height: rem(28px);  
   margin-bottom: rem(13px);
 
   @include phones {    
     margin-bottom: rem(20px);
+  }
+
+  @include min-phones {
+    font-size: rem(22px);
+  }
+
+  @include min-height {
+    margin-bottom: 0;
   }
 }
 
@@ -68,8 +76,8 @@
 }
 
 .best__pic {
- height: rem(90px);
- width: rem(90px);
+ height: 90px;
+ width: 90px;
  margin: 0 auto;
   margin-bottom: rem(32px);
   @include phones {
@@ -79,8 +87,8 @@
 }
 
 .best__icon {
-  max-width: rem(90px);
-  max-height: rem(90px);
+  max-width: 90px;
+  max-height: 90px;
   &_green{
     fill: $green;
   }
@@ -94,6 +102,18 @@
 
 .best__dest {
   line-height: rem(24px);
-  font-size: rem(14px);
+  font-size: 14px;
+
+  @include min-phones {   
+    font-size: rem(13px);
+    line-height: rem(20px);
+  }
+}
+
+.best__wrap .section-title {
+  
+  @include phones {
+    font-size: 50px;
+  }
 }
 

@@ -7,12 +7,21 @@
 
 .menu__title {
     position: absolute;
-	top: 10%;
-    left: 10%;
+	top: 13%;
+    left: 9%;
     
     @include tablets() {
         top: 8%;
         left: 3%;
+    }
+
+    @include phones {
+        top: 5%;
+        left: 13%;
+
+        .section-title {
+            font-size: 50px;
+        }
     }
 }
 
@@ -52,8 +61,8 @@
         margin-bottom: rem(50px);
     } 
 
-    @include tablets() {       
-        margin-bottom: rem(100px);
+    @include phones {       
+        margin-bottom: rem(70px);
     } 
 }
 
@@ -110,7 +119,14 @@
     line-height: rem(24px);
     font-size: rem(14px);
     
-    @include tablets() {
-        width: 90%;        
+    @include tablets {
+        width: 90%;   
+        font-size: 14px; 
+        line-height: 24px;    
     } 
+
+    @include min-phones {
+        line-height: rem(20px);
+        font-size: rem(14px);
+    }
 }

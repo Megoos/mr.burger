@@ -11,7 +11,11 @@
     color: #fff;
   }
 
-  @include phones {
+  @include tablets {
+      font-size: 4.7rem;
+    }
+
+  @include min-phones {
       font-size: 50px;
     }
 }

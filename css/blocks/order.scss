@@ -8,6 +8,13 @@
   }
 }
 
+.container-order {
+  @include tablets() {
+    padding-bottom: 19%;
+  }     
+}
+
+
 .order__form-tag {
   padding-top: rem(50px);
   padding-bottom: rem(90px);
@@ -17,8 +24,18 @@
   }
 
   @include phones {
-    padding-top: rem(20px);
+    padding-top: rem(15px);
     padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 687px) {
+  .container-order {
+    padding-bottom: 0;    
+  }
+
+  .order__form-tag {
+    padding-top: 0;
   }
 }
 
@@ -39,11 +56,12 @@
 
   @include tablets() {    
     margin-left: 0;
-    width: 63%;
+    width: 64%;
+     margin-bottom: -5px;  
   } 
 
   @include phones {
-    width: 100%;    
+    width: 100%;        
   }
 }
 
@@ -56,21 +74,27 @@
     margin-left: rem(-20px);
     margin-bottom: rem(20px);
   }
+  
 }
 
 .order__form-label {
   margin-bottom: rem(7px);
   @include ubuntu();
   color: #fff;
-  font-size: rem(14px);
+  font-size: 14px;
 }
 
 .order__form-input {
-  font-size: rem(14px);  
-  padding: rem(8px) rem(10px);
+  font-size: 14px;  
+  padding: 8px 10px;
   border: rem(1px) solid #d1cfcb;
   border-radius: rem(5px);
   width: 100%;
+
+  @include min-height {
+    font-size: 12px;
+    padding: 6px 10px;    
+  }
 }
 
 .order__form-block {
@@ -85,8 +109,12 @@
 }
 
 .order__form-input_textarea {
-  height: rem(110px);
+  height: 110px;
   resize: none;
+
+  @include min-height {
+    height: 80px;
+  }
 }
 
 .order__form-buttons {
@@ -97,13 +125,26 @@
       justify-content: center;
       padding-top: rem(20px);
     }
+
+    @include min-height {
+      padding-top: 0;
+    }
   }  
+
+  @include tablets {
+    margin-left: rem(20px);
+    margin-top: -8px;
+  }
+
+  @include phones {
+    margin-left: rem(35px);
+  }
 }
 
 .order__radio {
   position: relative;
   white-space: nowrap;
-  margin-right: rem(20px);
+  margin-right: 20px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -146,7 +187,7 @@
 }
 
 .order__radio-title {
-  font-size: rem(14px);
+  font-size: 14px;
   color: #fff;
   margin-left: rem(10px);
 }
@@ -183,9 +224,8 @@
   border-radius: rem(5px);
   color: #ffffff;
   @include ubuntu(middle);
-  padding: rem(10px) rem(15px);
-  cursor: pointer;
-  
+  padding: 10px 15px;
+  cursor: pointer;  
 }
 
 .order__form-button_reset {
@@ -196,13 +236,22 @@
 }
 
 .order__order-btn {
-  @include tablets() {
+  @include tablets {
+      margin-top: rem(25px);
+  }
+
+  @include phones {
       margin-top: rem(5px);
   }
 }
 
 .order .section-title {
   @include phones {
+    font-size: 50px;
+    line-height: 60px;
+    margin-top: 5px;
+  }  
+  @include min-phones {
     font-size: 32px;
     line-height: 60px;
   }  

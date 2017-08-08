@@ -26,11 +26,17 @@
 
   @include tablets {
     text-align: center;   
-    margin-bottom: 0; 
+    margin-bottom: 24%; 
   }
 
   @include phones {
-    margin-bottom: 0; 
+    .section-title {
+      font-size: 50px;
+    }
+  }
+
+  @include min-height {
+    margin-bottom: 0;
   }
 }
 
@@ -53,7 +59,7 @@
   }
 
   @include tablets() {
-    font-size: rem(25px);
+    font-size: rem(27px);
     display: inline-flex;
   }
 }
@@ -66,7 +72,11 @@
   }
 
   @include phones {
-    margin-top: 15%;
+    margin-top: 23%;
+  }
+
+  @include min-height {
+    margin-top: 10%;
   }
 }
 
@@ -77,6 +87,11 @@
     margin-bottom: rem(25px);
   }
 
+  @include phones {
+    margin-bottom: rem(28px);
+  }
+
+
   &.active {
     .team-acco__content {
       height: auto;
@@ -85,7 +100,8 @@
       padding-bottom: rem(7px);
         @include tablets() {
           margin-left: 0;
-        }
+          padding-bottom: 0;
+        }        
     }
 
     .team-acco__title {
@@ -116,7 +132,7 @@
   line-height: rem(24px);
 
   @include tablets() {
-      margin-top: rem(25px);
+      margin-top: rem(20px);
       margin-left: 0;
   }
 

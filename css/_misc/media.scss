@@ -13,3 +13,15 @@
     @content;
   }
 }
+
+@mixin min-phones {
+  @media screen and (max-width: 330px) {
+    @content;
+  }
+}
+
+@mixin min-height {
+  @media screen and (max-height: 650px) {
+    @content;
+  }
+}
