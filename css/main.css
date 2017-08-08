@@ -535,7 +535,7 @@ footer {
   @media screen and (max-width: 768px) {
     .section-title {
       font-size: 4.7rem; } }
-  @media screen and (max-width: 330px) {
+  @media screen and (max-width: 360px) {
     .section-title {
       font-size: 50px; } }
 
@@ -711,7 +711,7 @@ footer {
     .hero__desc {
       font-size: 3.75rem;
       margin-top: -15px; } }
-  @media screen and (max-width: 330px) {
+  @media screen and (max-width: 360px) {
     .hero__desc {
       font-size: 3.125rem; } }
 
@@ -850,7 +850,7 @@ footer {
   @media screen and (max-width: 480px) {
     .best__title {
       margin-bottom: 1.25rem; } }
-  @media screen and (max-width: 330px) {
+  @media screen and (max-width: 360px) {
     .best__title {
       font-size: 1.375rem; } }
   @media screen and (max-height: 650px) {
@@ -922,7 +922,7 @@ footer {
 .best__dest {
   line-height: 1.5rem;
   font-size: 14px; }
-  @media screen and (max-width: 330px) {
+  @media screen and (max-width: 360px) {
     .best__dest {
       font-size: 0.8125rem;
       line-height: 1.25rem; } }
@@ -1239,7 +1239,7 @@ footer {
       width: 90%;
       font-size: 14px;
       line-height: 24px; } }
-  @media screen and (max-width: 330px) {
+  @media screen and (max-width: 360px) {
     .menu-acco__desc {
       line-height: 1.25rem;
       font-size: 0.875rem; } }
@@ -1572,9 +1572,9 @@ footer {
     line-height: 60px;
     margin-top: 5px; } }
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 360px) {
   .order .section-title {
-    font-size: 32px;
+    font-size: 30px;
     line-height: 60px; } }
 
 .map {
