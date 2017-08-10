@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 function evenNumber (arg) {
     var result = [];

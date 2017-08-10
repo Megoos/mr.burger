@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 function bigSalary (arg) {
     var result = [];
@@ -13,15 +13,15 @@ function bigSalary (arg) {
 
 var users = [
     {
-            name: "Алексей",
+            name: 'Алексей',
             salary: 500
     },
     {
-            name: "Виктор",
+            name: 'Виктор',
             salary: 1300
     },
     {
-            name: "Иван",
+            name: 'Иван',
             salary: 1500
     }
 ];
