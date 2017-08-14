@@ -1,3 +1,230 @@
 .burgers {
   background: linear-gradient(180deg,#f9b43b 0,#eb8c38 40%,#eb8c38 60%,#eb8c38 0,#f9b43b);
 }
+
+.burgers__wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.burgers__block {
+  display: flex;
+  align-items: center;
+  height: 480px;
+  position: relative;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 14%;
+    height: auto;
+   }
+
+  @include phones() {
+    width: 96%;
+    margin: 0 auto;
+  }
+}
+
+
+.burgers__image, .burgers__content {
+  flex-basis: rem(470px);  
+
+  @include tablets {
+    flex-basis: auto;
+  }
+}
+
+.burgers__content {
+  margin-top: -123px;
+  margin-left: 22px;
+
+  @include tablets {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  @include phones {
+    margin-top: 10px;;
+  }
+
+  @include min-height {
+    margin-top: 0;
+  }
+}
+
+.burgers__image-pic {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  
+  @include tablets {
+    padding-top: 85px;    
+  }
+
+  @include phones {
+    padding-left: 11%;
+    padding-right: 11%;
+    padding-top: 102px; 
+  }
+}
+
+.burgers__title {
+  line-height: 64px;
+  margin-bottom: 40px; 
+
+  @include tablets {
+    margin-bottom: 20px;
+  }
+
+  @include phones {
+    font-size: 50px;
+    padding: 0 10%;
+    margin-bottom: 10px;
+  }
+
+  @include min-height {
+    font-size: 30px;
+    margin-bottom: 0;
+    padding: 0 5%;
+  }
+}
+
+.burgers__text {
+  @include ubuntu();
+  font-size: 14px;
+  color: #fff;
+  line-height: 24px;
+
+  @include min-height {
+    font-size: 12px;
+    line-height: 22px;
+  }
+}
+
+.burgers__order {
+  display: flex;
+  color: $red;
+  @include gagalin();
+  align-items: baseline; 
+  
+  @include tablets {
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  @include phones {
+    margin-top: 0px;
+  }
+}
+
+.burgers__num {
+  font-size: 72px;  
+
+  @include phones {
+    font-size: 50px;
+  }
+}
+
+.burgers__currency {
+  font-size: 30px;
+
+  @include phones{
+    font-size: 24px;
+  }
+}
+
+.burgers__order .btn {
+  margin-left: 25px;
+}
+
+
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  flex-direction: column;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 90px;
+  height: 90px;
+  background: #f08c33;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background: $red;
+  }
+
+  @include tablets {
+    left: 40px;
+    top: 8px;
+  }
+
+  @include phones {
+    left: 0;
+    top: -13px;
+  }
+}
+
+.products-icon {
+  margin-top: 10px;
+  fill: #fff;
+  width: 46px;
+  height: 44px;
+}
+
+.products__text {
+  @include gagalin();
+  font-size: 14px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.kkal {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 80px;
+  opacity: .5;
+
+  @include tablets {
+    top: 8px;
+    right: 40px;
+    left: auto;
+    bottom: auto;
+  }
+
+  @include phones {
+    right: 0;
+    top: -13px;
+  }
+
+}
+
+.kkal-icon {
+  display: block;
+  position: absolute;
+  fill: #fff;
+  width: 60px;
+  height: 60px;
+}
+
+.kkal__text, .kkal__num {
+  @include gagalin();
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  text-align: center;
+}
+
+.kkal__num {
+  font-size: 20px;
+  margin-top: 25px;
+  padding-bottom:10px; 
+}

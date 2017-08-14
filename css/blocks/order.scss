@@ -250,9 +250,11 @@
     font-size: 50px;
     line-height: 60px;
     margin-top: 5px;
+    margin-bottom: 25px;
   }  
   @include min-phones {
     font-size: 30px;
     line-height: 60px;
+    margin-bottom: 0.9375rem;
   }  
 }
