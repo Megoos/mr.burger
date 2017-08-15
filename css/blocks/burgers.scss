@@ -157,7 +157,7 @@
   cursor: pointer;
 
   &:hover {
-    background: $red;
+    background: $red;    
   }
 
   @include tablets {
@@ -184,6 +184,115 @@
   line-height: 28px;
   color: #fff;
 }
+
+.products__block {
+  border-radius: 5px;
+  background: rgba(#fff, .9);  
+  position: absolute;  
+  width: 270px;
+  height: auto;
+  left: 90px;
+  top: 5px; 
+  display: none;
+
+  @include tablets {
+    left: 130px;
+    top: 8px;
+    width: 320px;    
+  }
+
+  @include phones {
+    left: 90px;
+    top: -13px;
+  }
+}
+
+.products__content {
+  margin: 15px 20px; 
+
+  @include tablets {
+    margin-right: 70px;
+  }
+}
+
+.products__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 6px 0px;
+  
+}
+
+.products__desc {
+  @include ubuntu(medium);
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+  flex: 1.3;
+}
+
+.products__gram {
+   @include ubuntu();
+  font-size: 14px;
+  line-height: 24px;
+  flex: 1;
+  text-align: right;
+}
+
+.products__logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.products__svg{
+    fill: #fff;
+    width: 45px;
+    height: 45px; 
+    
+    &_beef, &_sauce {
+      fill: $red;
+    }
+
+    &_salad, &_cucumber {
+      fill: $green;
+    }
+
+    &_buns, &_cheese {
+      fill: $yellow;
+    }
+}
+
+.products-close {
+  display: none;
+  position: absolute;
+  right: 17px;
+  top: 10px;
+  width: 25px;
+  height: 25px;
+
+  @include tablets {
+    display: block;
+  }
+}
+
+.products-close:before, .products-close:after {
+  position: absolute;
+  left: 15px;
+  content: '';
+  height: 26px;
+  width: 4px;
+  background-color: $red;
+  border-radius: 3px;
+}
+.products-close:before {
+  transform: rotate(45deg);
+}
+.products-close:after {
+  transform: rotate(-45deg);
+}
+
 
 .kkal {
   position: absolute;
@@ -227,4 +336,32 @@
   font-size: 20px;
   margin-top: 25px;
   padding-bottom:10px; 
+}
+
+
+.burgers__arrow-link {
+  position: absolute;
+  height: 28px;
+  opacity: .7;
+   // display: block;  
+  &:hover {
+      opacity: 1;
+  }  
+
+  &_left {
+    left: -40px;
+    top: calc(50% - 14px);
+    transform: rotate(90deg);
+  }
+
+  &_right {
+    transform: rotate(-90deg);
+    right: -40px;
+  }
+}
+
+.burgers__arrow-icon {
+  fill: #fff;
+  height: 28px;
+  width: 28px;
 }
