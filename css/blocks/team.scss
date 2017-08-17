@@ -44,8 +44,13 @@
   @include gagalin();
   font-size: rem(14px);
   color: #fff; 
+  text-decoration: none;
   display: flex;
   align-items: center;
+
+  &:hover {
+    color: $yellow;
+  }
 
   &:before {
     content: "";
@@ -92,18 +97,7 @@
   }
 
 
-  &.active {
-    .team-acco__content {
-      height: auto;
-      margin-top: rem(14px); 
-      margin-left: rem(19px);
-      padding-bottom: rem(7px);
-        @include tablets() {
-          margin-left: 0;
-          padding-bottom: 0;
-        }        
-    }
-
+  &.active {   
     .team-acco__title {
       color: $yellow;
       
@@ -114,14 +108,25 @@
   }
 }
 
+.team-acco__wrap {
+  height: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+
 .team-acco__content {
   display: flex;
-  overflow: hidden;
-  height: 0;  
+  overflow: hidden;  
+  
+  padding-top: rem(14px); 
+  margin-left: rem(19px);
+  padding-bottom: rem(7px);
 
   @include tablets() {
     flex-direction: column;
-    align-items: center;    
+    align-items: center;   
+    margin-left: 0;
+    padding-bottom: 0; 
   }
 }
 

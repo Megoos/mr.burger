@@ -27,16 +27,15 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 
   @include phones {
     flex-direction: column;
   }  
 }
 
-.footer__col {
-  width: 50%;
-  padding: 10px 0;  
-  
+.footer__col {  
+  padding: 10px 0;    
   
   @include tablets() {
     margin: 0 rem(5px);

@@ -90,7 +90,7 @@
 
     @include tablets() {
         align-items: flex-end;  
-        width: 60px;      
+        width: 72px;      
     } 
 
     @include phones {
@@ -116,13 +116,13 @@
     color: #fff;
     width: 80%;
     margin-top: 20%;    
-    line-height: rem(24px);
-    font-size: rem(14px);
+    line-height: 24px;
+    font-size: 14px;
     
     @include tablets {
         width: 90%;   
         font-size: 14px; 
-        line-height: 24px;    
+        line-height: 26px;    
     } 
 
     @include min-phones {

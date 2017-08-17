@@ -189,6 +189,7 @@
   border-radius: 5px;
   background: rgba(#fff, .9);  
   position: absolute;  
+  z-index: 10;
   width: 270px;
   height: auto;
   left: 90px;
@@ -296,6 +297,7 @@
 
 .kkal {
   position: absolute;
+  z-index: 1;
   bottom: 0;
   left: 0;
   width: 60px;
