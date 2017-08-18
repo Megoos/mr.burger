@@ -1,3 +1,5 @@
+$countMenu: 3;
+
 .menu {
     background: url('../img/bg/bg_4.jpg') center center no-repeat;
     background-size: cover;
@@ -42,17 +44,17 @@
     display: flex;
     justify-content: flex-end;
 
-    &.active {
-        width: 50%;
+    // &.active {
+    //     width: 50%;
 
-        .menu-acco__content {
-            width: 100%;        
-        }
+    //     // .menu-acco__content {
+    //     //     width: 100%;        
+    //     // }
 
-        @include tablets() {
-            width: 100%;
-        }
-    }
+    //     @include tablets() {
+    //         width: 100%;
+    //     }
+    // }
 }
 
 .menu-acco__wrap-title {
@@ -67,6 +69,7 @@
 }
 
 .menu-acco__title {
+    cursor: pointer;
     width: 80px;
     @include gagalin();
     font-size: rem(40px);
@@ -78,6 +81,7 @@
     background: center no-repeat;
     background-size: cover;
     position: relative;
+    overflow: hidden;
 
     &::before {
         content: "";
@@ -97,11 +101,24 @@
         align-items: flex-end;  
         width: 45px;      
     } 
+
+    &:hover {
+        .menu-acco__deg { 
+            opacity: 1;
+        }
+    }
 }
 
 .menu-acco__deg {    
     white-space: nowrap;
     transform: rotate(-90deg);  
+    opacity: .85;    
+}
+
+.menu-acco__wrap-content {
+    width: 0;
+    overflow: hidden;
+    transition: .5s;
 }
 
 .menu-acco__content {
@@ -109,7 +126,17 @@
     display: flex;   
     justify-content: center;
     overflow: hidden;
-    width: 0; 
+    height: 100%;
+    width: calc(100vw / 2); 
+
+    @include tablets {
+        width: calc(100vw - 72px * 3);
+    }
+
+    @include phones {
+        width: calc(100vw - 45px * 3);
+    } 
+    //width: 100vw; 
 }
 
 .menu-acco__desc {
@@ -124,6 +151,11 @@
         font-size: 14px; 
         line-height: 26px;    
     } 
+
+    @include phones {
+        line-height: rem(26px);
+        font-size: rem(14px);
+    }
 
     @include min-phones {
         line-height: rem(20px);

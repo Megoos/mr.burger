@@ -9,7 +9,11 @@
   display: inline-flex;
   font-size: 13px;
   @include ubuntu(medium);
-    &:hover {
-       background-color: darken($red, 7%);
-    }
+  &:hover {
+      background-color: darken($red, 7%);
+  }
+
+  &:focus {
+    outline: 0px;
+  }
 }

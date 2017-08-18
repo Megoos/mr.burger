@@ -18,5 +18,9 @@
   @include min-phones {
       font-size: 50px;
     }
+
+  @include min-height {
+    font-size: 50px;
+  }
 }
 

@@ -16,6 +16,10 @@
   @include phones {
     margin-bottom: 21%;
   } 
+
+  @include min-height {
+    margin-bottom: 0;
+  }
 }
 
 .best__desc {

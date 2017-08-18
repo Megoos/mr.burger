@@ -170,9 +170,10 @@
   height: 30px;
   left: calc(50% - 15px);
   bottom: rem(33px);
+  opacity: .8;
    // display: block;  
     &:hover {
-        border-bottom: 2px solid #fff;
+        opacity: 1
     }  
 }
 

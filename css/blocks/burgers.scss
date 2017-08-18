@@ -343,7 +343,7 @@
 
 .burgers__arrow-link {
   position: absolute;
-  height: 28px;
+  height: rem(28px);
   opacity: .7;
    // display: block;  
   &:hover {
@@ -352,18 +352,34 @@
 
   &_left {
     left: -40px;
-    top: calc(50% - 14px);
+    top: calc(50% - rem(14px));
     transform: rotate(90deg);
+    
+    @include tablets {
+      left: 10px;
+    }
+
+    @include phones {
+      left: 0;
+    }
   }
 
   &_right {
     transform: rotate(-90deg);
     right: -40px;
+
+    @include tablets {
+      right: 10px;
+    }
+
+    @include phones {
+      right: 0;
+    }
   }
 }
 
 .burgers__arrow-icon {
   fill: #fff;
-  height: 28px;
-  width: 28px;
+  height: rem(28px);
+  width: rem(28px);
 }

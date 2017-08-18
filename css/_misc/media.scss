@@ -21,7 +21,7 @@
 }
 
 @mixin min-height {
-  @media screen and (max-height: 650px) and  (max-width: 768px ) {
+  @media screen and (max-height: 667px) and  (max-width: 768px ) {
     @content;
   }
 }

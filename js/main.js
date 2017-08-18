@@ -42,7 +42,7 @@ $(function(){
         'height' : itemHeight
       })
   
-  console.log(itemHeight);
+  //console.log(itemHeight);
 
   $('.team-acco__title').on('click', function(e){
     e.preventDefault();
@@ -73,4 +73,49 @@ $(function(){
       })
     }        
   })
+});
+
+//menu width accordion
+$(function(){
+
+    // var widthMenuSection = $('.menu').outerWidth();
+    // console.log(widthMenuSection);
+
+    $('.menu-acco__title').on('click', function (e) {
+      e.preventDefault();
+
+      var elem = $(e.target),
+          item = elem.closest('.menu-acco__item'),
+          content = item.find('.menu-acco__wrap-content'),
+          reqWidth = content.find('.menu-acco__content').outerWidth(),
+          items = item.siblings(),
+          otherContent = items.find('.menu-acco__wrap-content');
+          console.log(reqWidth);
+
+      if (!item.hasClass('active')) {
+        items.removeClass('active');
+        item.addClass('active');
+
+        otherContent.css({
+          'width' : 0
+        });
+
+        content.css({
+          'width' : reqWidth
+        })
+      } else {
+        item.removeClass('active');
+        content.css({
+          'width' : 0
+        })
+      }        
+    })
+});
+
+
+//fancybox
+
+$(function () {
+  $('[data-fancybox]').fancybox({ 
+  });  
 });
