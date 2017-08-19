@@ -90,6 +90,7 @@ transform: rotate(-45deg);
 
 	@include phones {
 		padding-bottom: 0px;
+		padding-top: 45px;
 	}
 }
 
@@ -108,7 +109,11 @@ transform: rotate(-45deg);
     height: 7px;
     background: #fff;
     border-radius: 50%;
-    margin: 20px auto;
+	margin: 20px auto;
+	
+	@include min-height {
+		margin: 15px auto;
+	}
   }
 }
 

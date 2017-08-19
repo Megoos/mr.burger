@@ -580,6 +580,51 @@ footer {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
 
+.popup-review {
+  display: none;
+  max-width: 473px;
+  width: 95%;
+  border-radius: 5px;
+  color: #2f3234; }
+  .popup-review p {
+    font-size: 14px;
+    line-height: 24px; }
+
+.popup__title {
+  font-family: 'Gagalin-Regular', Helvetica, sans-serif;
+  font-size: 14px;
+  margin-bottom: 1.5625rem; }
+
+.fancybox-close-small {
+  position: absolute;
+  right: 26px;
+  top: 20px;
+  width: 20px;
+  height: 20px; }
+  .fancybox-close-small:focus:after {
+    outline: 0px; }
+
+.fancybox-close-small:before, .fancybox-close-small:after {
+  position: absolute;
+  left: 15px;
+  top: 0;
+  content: '';
+  height: 20px;
+  width: 3px;
+  background-color: #e35028;
+  border-radius: 3px;
+  opacity: .7; }
+
+.fancybox-close-small:before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.fancybox-close-small:after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
 .hero {
   background: url("../img/bg/bg_1.jpg") center center no-repeat;
   background-size: cover;
@@ -895,7 +940,8 @@ footer {
   padding-bottom: 60px; }
   @media screen and (max-width: 480px) {
     .device-menu__block {
-      padding-bottom: 0px; } }
+      padding-bottom: 0px;
+      padding-top: 45px; } }
 
 .device-menu__item:last-child:after {
   display: none; }
@@ -908,6 +954,9 @@ footer {
   background: #fff;
   border-radius: 50%;
   margin: 20px auto; }
+  @media screen and (max-height: 667px) and (max-width: 768px) {
+    .device-menu__item:after {
+      margin: 15px auto; } }
 
 .device-menu__link {
   font-family: 'Ubuntu', Helvetica, sans-serif;
@@ -1046,10 +1095,6 @@ footer {
   background: linear-gradient(180deg, #f9b43b 0, #eb8c38 40%, #eb8c38 60%, #eb8c38 0, #f9b43b); }
 
 .burgers__wrap {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1263,13 +1308,24 @@ footer {
   @media screen and (max-width: 480px) {
     .products__block {
       left: 90px;
-      top: -13px; } }
+      top: -13px;
+      width: 260px; } }
+  @media screen and (max-width: 360px) {
+    .products__block {
+      width: 210px; } }
 
 .products__content {
   margin: 15px 20px; }
   @media screen and (max-width: 768px) {
     .products__content {
       margin-right: 70px; } }
+  @media screen and (max-width: 480px) {
+    .products__content {
+      margin-right: 40px; } }
+  @media screen and (max-width: 360px) {
+    .products__content {
+      margin-right: 35px;
+      margin-left: 10px; } }
 
 .products__item {
   display: -webkit-box;
@@ -1337,22 +1393,23 @@ footer {
     fill: #f9b43b; }
 
 .products-close {
+  opacity: .8;
   display: none;
   position: absolute;
-  right: 17px;
+  right: 0.9375rem;
   top: 10px;
-  width: 25px;
-  height: 25px; }
+  width: 1.5625rem;
+  height: 1.5625rem; }
   @media screen and (max-width: 768px) {
     .products-close {
       display: block; } }
 
 .products-close:before, .products-close:after {
   position: absolute;
-  left: 15px;
+  left: 10px;
   content: '';
-  height: 26px;
-  width: 4px;
+  height: 1.625rem;
+  width: 0.25rem;
   background-color: #e35028;
   border-radius: 3px; }
 
@@ -1411,8 +1468,7 @@ footer {
   .burgers__arrow-link:hover {
     opacity: 1; }
   .burgers__arrow-link_left {
-    left: -40px;
-    top: calc(50% - rem(14px));
+    left: -3%;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg); }
@@ -1421,18 +1477,18 @@ footer {
         left: 10px; } }
     @media screen and (max-width: 480px) {
       .burgers__arrow-link_left {
-        left: 0; } }
+        left: -3%; } }
   .burgers__arrow-link_right {
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
-    right: -40px; }
+    right: -3%; }
     @media screen and (max-width: 768px) {
       .burgers__arrow-link_right {
         right: 10px; } }
     @media screen and (max-width: 480px) {
       .burgers__arrow-link_right {
-        right: 0; } }
+        right: -3%; } }
 
 .burgers__arrow-icon {
   fill: #fff;
@@ -1867,10 +1923,6 @@ footer {
   @media screen and (max-width: 480px) {
     .reviews__text {
       display: none; } }
-
-.popup-review {
-  display: none;
-  width: 400px; }
 
 .order {
   background: url("../img/bg/bg_5.jpg") center no-repeat;

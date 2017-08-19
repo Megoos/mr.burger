@@ -14,21 +14,22 @@ $(function(){
 
 //products block
 $(function(){
-   $('.products').hover(function(e){   
-    $('.products__block').fadeToggle(0);
-  });
- 
-   $('.products__block').mouseover(function(e){   
-    $('.products__block').fadeIn(0);
-  });
 
-  $('.products__block').mouseleave(function(e){   
-    $('.products__block').fadeOut(0);
-  });
+  $('.products').on('mouseenter touchstart', function(){
+    $('.products__block').fadeIn(200);
+  })
 
+  $('.products').on('mouseleave', function(){
+    $('.products__block').fadeOut(200);
+  })
+
+  $('.products').on('mouseleave', function(){
+    $('.products__block').fadeOut(200);
+  })  
+  
   $('.products-close').on('click', function(e){
    e.preventDefault()
-    $('.products__block').fadeOut(0);
+    $('.products__block').fadeOut(200);
   })
 });
 
@@ -77,10 +78,7 @@ $(function(){
 
 //menu width accordion
 $(function(){
-
-    // var widthMenuSection = $('.menu').outerWidth();
-    // console.log(widthMenuSection);
-
+    
     $('.menu-acco__title').on('click', function (e) {
       e.preventDefault();
 
@@ -112,9 +110,7 @@ $(function(){
     })
 });
 
-
 //fancybox
-
 $(function () {
   $('[data-fancybox]').fancybox({ 
   });  
