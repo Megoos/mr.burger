@@ -132,6 +132,11 @@
   }
 }
 
+.hero__image {
+  display: flex;
+  align-items: flex-end;
+}
+
 .hero__text {
   margin-top: rem(60px);
 
@@ -154,6 +159,10 @@
   @include phones {
     margin-top: rem(35px);
   }  
+
+  @include min-height {
+    margin-top: 0px;
+  }
 }
 
 

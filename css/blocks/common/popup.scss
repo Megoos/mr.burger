@@ -21,6 +21,10 @@
         outline: 0px;
     }
 
+    &:hover:after {
+        background: $red;
+    }
+
     position: absolute;
     right: 26px;
     top: 20px;
@@ -39,9 +43,11 @@
   border-radius: 3px;
   opacity: .7;
 }
+
 .fancybox-close-small:before {
   transform: rotate(45deg);
 }
+
 .fancybox-close-small:after {
   transform: rotate(-45deg);
 }

@@ -1,15 +1,16 @@
 .map {
-   background: url("../img/content/map.png") center no-repeat;
+  // background: url("../img/content/map.png") center no-repeat;
    background-size: cover;
    position: relative;    
 }
 
 .yandex-map {
 	position: absolute;
-	top: 0;
+	top: -95px;
 	bottom: 0;
 	left: 0;
-	right: 0;
+  right: 0;
+  height: 110%;
 }
 
 

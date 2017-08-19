@@ -111,7 +111,61 @@ $(function(){
 });
 
 //fancybox
-$(function () {
+$(function(){
   $('[data-fancybox]').fancybox({ 
   });  
+});
+
+//slick slider
+$(function(){
+ var burgerSlider = $('.burgers__slider').slick({
+    autoplay: true,
+    autoplaySpeed: 2500,
+    arrows: false    
+  });
+
+  $('.burgers__arrow-link_right').on('click', function(e){
+    e.preventDefault();
+    $('.burgers__slider').slick('slickNext');
+  })
+
+  $('.burgers__arrow-link_left').on('click', function(e){
+    e.preventDefault();
+    $('.burgers__slider').slick('slickPrev');
+  })
+});
+
+
+//map
+$(function(){
+  ymaps.ready(init);
+    var myMap,
+        myPlacemark;
+    
+    var marker = {
+      iconLayout: 'default#image',
+      iconImageHref: './img/icons/map-marker.png',
+      iconImageSize: [46, 57],
+      iconImageOffset: [-23, -57]
+    }
+   
+    function init(){     
+        myMap = new ymaps.Map ("map", {
+          center: [55.80083807, 49.10486854],
+          zoom: 12
+        });
+
+        myPlacemark0 = new ymaps.Placemark([55.78398689, 49.11284808], {           
+          // hintContent: 'Москва!', 
+          // balloonContent: 'Столица России' 
+        },marker);
+
+        myPlacemark1 = new ymaps.Placemark([55.80951609, 49.08229236],{},marker);
+        myPlacemark2 = new ymaps.Placemark([55.79830078, 49.12692431],{},marker);
+
+
+        myMap.geoObjects.add(myPlacemark0)
+                        .add(myPlacemark1)
+                        .add(myPlacemark2);
+    }
 });
