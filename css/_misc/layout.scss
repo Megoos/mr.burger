@@ -51,16 +51,13 @@ body {
   }
 }
 
-.section {
-	// height: 100vh;
+.section {	
 	height: 100%;
 	min-height: rem(650px);
 	position: relative;
   display: flex;
   overflow: hidden;
 }
-
-
 
 // tag styles reset
 h1,
@@ -99,5 +96,4 @@ footer {
 * {
   box-sizing: border-box;
 }
-
 //end tag styles reset
