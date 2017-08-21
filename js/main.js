@@ -195,28 +195,28 @@ $(function(){
     request.fail(function(jqXHR, textStatus) {
         alert("Request failed: " + textStatus);
     });
-}
+  }
 
-var ajaxForm = function (form) {
+  var ajaxForm = function (form) {
 
-    var url = form.attr('action'),
-        data = form.serialize();
+      var url = form.attr('action'),
+          data = form.serialize();
 
-    return $.ajax({
-        type: 'POST',
-        url: url,
-        data: data,
-        dataType: 'JSON'
-    });
+      return $.ajax({
+          type: 'POST',
+          url: url,
+          data: data,
+          dataType: 'JSON'
+      });
 
-}
+  }
 
-$('#order-form').on('submit', submitForm);
+  $('#order-form').on('submit', submitForm);
 
-$('.close-order').on('click', function(e) {
-  e.preventDefault();
+  $('.close-order').on('click', function(e) {
+    e.preventDefault();
 
-  $.fancybox.close(order);
-})
+    $.fancybox.close(order);
+  })
 
 });

@@ -461,7 +461,30 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: 100%;
+  overflow: hidden;
+  height: 100%; }
+
+.maincontent {
+  height: 100%;
+  min-height: 650px;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  -o-transition: transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  will-change: transform; }
+  @media screen and (max-width: 768px) {
+    .maincontent {
+      min-height: auto; } }
+
+.section {
+  height: 100%;
+  min-height: 40.625rem;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   overflow: hidden; }
 
 h1,
@@ -494,16 +517,6 @@ footer {
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
-
-.section {
-  height: 100vh;
-  min-height: 40.625rem;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden; }
 
 .btn {
   padding: 0 15px;

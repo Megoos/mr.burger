@@ -18,7 +18,7 @@
   <div class="wrapper">
     <div class="maincontent">
 
-      <section class="section hero">
+      <section class="section hero active">
         <div class="container hero__wrapper">
           <header class="header">
             <a href="#" class="logo">
@@ -28,40 +28,40 @@
               <nav class="nav">
                 <ul class="nav__list">
                   <li class="nav__item">
-                    <a href="#" class="nav__link">
+                    <a href="#" class="nav__link" data-scroll-to="1">
                       О нас
                     </a>
                   </li>
                   <li class="nav__item">
-                    <a href="#" class="nav__link">
+                    <a href="#" class="nav__link" data-scroll-to="2">
                       Бургеры
                     </a>
                   </li>
                   <li class="nav__item">
-                    <a href="#" class="nav__link">
+                    <a href="#" class="nav__link" data-scroll-to="3"
                       Команда
                     </a>
                   </li>
                   <li class="nav__item">
-                    <a href="#" class="nav__link">
+                    <a href="#" class="nav__link" data-scroll-to="4">
                       Меню
                     </a>
                   </li>
                   <li class="nav__item">
-                    <a href="#" class="nav__link">
+                    <a href="#" class="nav__link" data-scroll-to="5">
                       Отзывы
                     </a>
                   </li>
                   <li class="nav__item">
-                    <a href="#" class="nav__link">
+                    <a href="#" class="nav__link" data-scroll-to="7">
                       Контакты
                     </a>
                   </li>                  
                 </ul>
               </nav>
               <div class="header__links">
-                <a class="order-link btn" href="#">Заказать</a>
-                <a class="hamburger-menu-link" href="">
+                <a class="order-link btn" href="#" data-scroll-to="6">Заказать</a>
+                <a class="hamburger-menu-link" href="#">
                   <div class="hamburger-menu-link__bars"></div>
                 </a>
               </div>
@@ -899,10 +899,9 @@
         </div>
 
         <div class="popup-order" id="order-popup">
-          <p>Сообщение отправлено</p>
+          <p></p>
           <a href="#" class="btn close-order" >Закрыть</a>
         </div>
-
       </section>
 
       <section class="section map">
@@ -951,48 +950,61 @@
           </div>
         </footer>
       </section>
-
-      <!-- menu device tablets and mobile  -->
-      <div class="device-menu">
-        <div class="container device-wrap">
-            <a href="#" class="close"></a>           
-            <ul class="device-menu__block">
-              <li class="device-menu__item"><a href="#" class="device-menu__link">Почему мы</a></li>
-              <li class="device-menu__item"><a href="#" class="device-menu__link">Меню</a></li>
-              <li class="device-menu__item"><a href="#" class="device-menu__link">Советы</a></li>
-              <li class="device-menu__item"><a href="#" class="device-menu__link">Кто мы</a></li>
-              <li class="device-menu__item"><a href="#" class="device-menu__link">Свяжитесь с нами</a></li>
-              <li class="device-menu__item"><a href="#" class="device-menu__link">Контакты</a></li>
-            </ul>
-                   
-        </div>        
-      </div>
+      
     </div>
   </div>
+
+  <!-- menu device tablets and mobile  -->
+  <div class="device-menu">
+    <div class="container device-wrap">
+        <a href="#" class="close"></a>           
+        <ul class="device-menu__block">
+          <li class="device-menu__item">
+            <a href="#" class="device-menu__link" data-scroll-to="1">Почему мы</a>
+          </li>
+          <li class="device-menu__item">
+            <a href="#" class="device-menu__link" data-scroll-to="4">Меню</a>
+          </li>
+          <li class="device-menu__item">
+            <a href="#" class="device-menu__link" data-scroll-to="5">Советы</a>
+          </li>
+          <li class="device-menu__item">
+            <a href="#" class="device-menu__link" data-scroll-to="3">Кто мы</a>
+          </li>
+          <li class="device-menu__item">
+            <a href="#" class="device-menu__link" data-scroll-to="6">Свяжитесь с нами</a>
+          </li>
+          <li class="device-menu__item">
+            <a href="#" class="device-menu__link" data-scroll-to="7">Контакты</a>
+          </li>
+        </ul>                   
+    </div>        
+  </div>
+
   <ul class="fixed-menu">
     <li class="fixed-menu__item active">
-      <a href="#" class="fixed-menu__link"></a>
+      <a href="#" class="fixed-menu__link" data-scroll-to="0"></a>
     </li>
     <li class="fixed-menu__item">
-      <a href="#" class="fixed-menu__link"></a>
+      <a href="#" class="fixed-menu__link" data-scroll-to="1"></a>
     </li>
     <li class="fixed-menu__item">
-      <a href="#" class="fixed-menu__link"></a>
+      <a href="#" class="fixed-menu__link" data-scroll-to="2"></a>
     </li>
     <li class="fixed-menu__item">
-      <a href="#" class="fixed-menu__link"></a>
+      <a href="#" class="fixed-menu__link" data-scroll-to="3"></a>
     </li>
     <li class="fixed-menu__item">
-      <a href="#" class="fixed-menu__link"></a>
+      <a href="#" class="fixed-menu__link" data-scroll-to="5"></a>
     </li>
     <li class="fixed-menu__item">
-      <a href="#" class="fixed-menu__link"></a>
+      <a href="#" class="fixed-menu__link" data-scroll-to="6"></a>
     </li>
     <li class="fixed-menu__item">
-      <a href="#" class="fixed-menu__link"></a>
+      <a href="#" class="fixed-menu__link" data-scroll-to="7"></a>
     </li>
     <li class="fixed-menu__item">
-      <a href="#" class="fixed-menu__link"></a>
+      <a href="#" class="fixed-menu__link" data-scroll-to="8"></a>
     </li>
   </ul>
 
@@ -1000,5 +1012,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script>
   <script src="./js/plugins/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/pageScroll.js"></script>
 </body>
 </html>

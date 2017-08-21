@@ -46,7 +46,7 @@
     "MIME-Version: 1.0" . "\r\n" .
     "Content-type: text/html; charset=UTF-8" . "\r\n";
 
-    $mail = mail('meguskov@ligarobotov.ru', 'Заказ бургеров', $mail_message, $headers);
+    $mail = mail('meguskov@ya.ru', 'Заказ бургеров', $mail_message, $headers);
 
     // if ($mail) {
     //     echo 'done';
