@@ -2182,6 +2182,19 @@ footer {
     line-height: 60px;
     margin-bottom: 0.9375rem; } }
 
+.popup-order {
+  display: none;
+  border-radius: 5px;
+  width: 230px; }
+  .popup-order .fancybox-close-small {
+    visibility: hidden; }
+  .popup-order p {
+    text-align: center; }
+
+.close-order {
+  margin-top: 15px;
+  margin-left: 46px; }
+
 .map {
   background-size: cover;
   position: relative; }

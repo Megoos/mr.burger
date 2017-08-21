@@ -112,8 +112,8 @@ $(function(){
 
 //fancybox
 $(function(){
-  $('[data-fancybox]').fancybox({ 
-  });  
+  $('[data-fancybox]').fancybox({});   
+  
 });
 
 //slick slider
@@ -155,6 +155,7 @@ $(function(){
           zoom: 12
         });
 
+        myMap.behaviors.disable('scrollZoom')
         myPlacemark0 = new ymaps.Placemark([55.78398689, 49.11284808], {           
           // hintContent: 'Москва!', 
           // balloonContent: 'Столица России' 
@@ -168,4 +169,54 @@ $(function(){
                         .add(myPlacemark1)
                         .add(myPlacemark2);
     }
+});
+
+//form ajax
+$(function(){
+
+  var order = $('.popup-order');    
+  var orderText = order.find('p');
+
+  var submitForm = function (ev) {
+    ev.preventDefault();
+    // console.log(ev);
+
+    var form = $(ev.target);  
+    
+    var request = ajaxForm(form);
+
+    request.done(function(msg) {
+        var mes = msg.mes,
+            status = msg.status;
+        orderText.html(mes);
+        $.fancybox.open(order);
+    });
+
+    request.fail(function(jqXHR, textStatus) {
+        alert("Request failed: " + textStatus);
+    });
+}
+
+var ajaxForm = function (form) {
+
+    var url = form.attr('action'),
+        data = form.serialize();
+
+    return $.ajax({
+        type: 'POST',
+        url: url,
+        data: data,
+        dataType: 'JSON'
+    });
+
+}
+
+$('#order-form').on('submit', submitForm);
+
+$('.close-order').on('click', function(e) {
+  e.preventDefault();
+
+  $.fancybox.close(order);
+})
+
 });
